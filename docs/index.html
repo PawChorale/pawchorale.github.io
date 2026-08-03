@@ -51,13 +51,13 @@
             </div>
           </div>
 
-          <div class="hero-visual" role="img" aria-label="A burgundy choral paw symbol combining SATB vocal parts with an audio waveform">
+          <div class="hero-visual" role="img" aria-label="A burgundy choral paw symbol combined with an audio waveform">
             <div class="hero-visual-ring">
               <div class="choral-paw" aria-hidden="true">
-                <span class="paw-toe paw-toe-s">S</span>
-                <span class="paw-toe paw-toe-a">A</span>
-                <span class="paw-toe paw-toe-t">T</span>
-                <span class="paw-toe paw-toe-b">B</span>
+                <span class="paw-toe paw-toe-s"></span>
+                <span class="paw-toe paw-toe-a"></span>
+                <span class="paw-toe paw-toe-t"></span>
+                <span class="paw-toe paw-toe-b"></span>
                 <span class="paw-pad">
                   <i></i><i></i><i></i><i></i><i></i>
                 </span>
@@ -123,22 +123,29 @@
             <h2>Hear and inspect the alignment.</h2>
           </div>
           <p>
-            Play the master and isolated parts in sync, follow the aligned piano
-            roll, and download the audio, MIDI, metadata, and rights notice.
+            Choose any of the 200 works, play its master and available isolated
+            parts in sync, and inspect the aligned per-part MIDI piano roll.
           </p>
         </div>
 
+        <label class="demo-picker" for="demo-song-select">
+          <span>Choose a work</span>
+          <select id="demo-song-select" disabled>
+            <option>Loading 200-work catalog…</option>
+          </select>
+        </label>
+
         <div class="demo-work-heading">
           <div>
-            <span>Example · Work 093</span>
-            <h3>Cucu, cucu!</h3>
-            <p>Juan del Encina</p>
+            <span id="demo-work-kicker">Interactive work browser</span>
+            <h3 id="demo-work-title">Loading…</h3>
+            <p id="demo-work-composer">Preparing catalog</p>
           </div>
           <dl>
-            <div><dt>Duration</dt><dd>00:54</dd></div>
-            <div><dt>Voicing</dt><dd>SATB</dd></div>
-            <div><dt>MIDI notes</dt><dd>251</dd></div>
-            <div><dt>Matched notes</dt><dd>92.43%</dd></div>
+            <div><dt>Duration</dt><dd id="demo-stat-duration">—</dd></div>
+            <div><dt>Voicing</dt><dd id="demo-stat-voicing">—</dd></div>
+            <div><dt>MIDI notes</dt><dd id="demo-stat-notes">—</dd></div>
+            <div><dt>Matched notes</dt><dd id="demo-stat-matched">—</dd></div>
           </dl>
         </div>
 
@@ -159,16 +166,10 @@
             <span id="demo-duration">00:54.0</span>
           </div>
           <div class="piano-roll-wrap">
-            <canvas id="piano-roll" width="1200" height="420" aria-label="Aligned SATB piano-roll visualization"></canvas>
+            <canvas id="piano-roll" width="1200" height="420" aria-label="Aligned per-part MIDI piano-roll visualization"></canvas>
             <div class="roll-loading" id="roll-loading">Loading aligned notes…</div>
           </div>
-          <div class="roll-legend" aria-label="Piano-roll legend">
-            <span class="legend-s">Soprano</span>
-            <span class="legend-a">Alto</span>
-            <span class="legend-t">Tenor</span>
-            <span class="legend-b">Bass</span>
-            <em>The playhead follows the master recording.</em>
-          </div>
+          <div class="roll-legend" id="roll-legend" aria-label="Piano-roll legend"></div>
           <div id="demo-audio-bank" hidden></div>
         </div>
 
@@ -176,33 +177,33 @@
           <details>
             <summary>Source metadata</summary>
             <dl>
-              <div><dt>Public work ID</dt><dd>093</dd></div>
-              <div><dt>Source score</dt><dd>0840.xml</dd></div>
-              <div><dt>CPDL edition</dt><dd>#44049, James Gibb</dd></div>
-              <div><dt>Source license</dt><dd>CPDL License v4</dd></div>
+              <div><dt>Public work ID</dt><dd id="demo-source-id">—</dd></div>
+              <div><dt>Source score</dt><dd id="demo-source-score">—</dd></div>
+              <div><dt>CPDL edition</dt><dd id="demo-source-edition">—</dd></div>
+              <div><dt>Source license</dt><dd id="demo-source-license">—</dd></div>
               <div><dt>Conversion</dt><dd>MusicXML → per-part MIDI</dd></div>
             </dl>
-            <p><a href="https://www.cpdl.org/wiki/index.php/%C2%A1Cucu%2C_cucu%21_%28Juan_del_Encina%29">CPDL source page ↗</a> · <a href="demo/93/RIGHTS_NOTICE.md">Rights notice</a></p>
+            <p><a id="demo-source-link" href="https://www.cpdl.org/">CPDL source page ↗</a> · <a href="https://zenodo.org/records/21777039">Rights record ↗</a></p>
           </details>
           <details>
             <summary>Rendering configuration</summary>
             <dl>
-              <div><dt>Audio</dt><dd>MP3, stereo, 44.1 kHz</dd></div>
-              <div><dt>Layout</dt><dd>Master + isolated SATB</dd></div>
+              <div><dt>Audio</dt><dd id="demo-render-audio">—</dd></div>
+              <div><dt>Layout</dt><dd id="demo-render-layout">—</dd></div>
               <div><dt>Time reference</dt><dd>Seconds from recording start</dd></div>
             </dl>
           </details>
           <article class="alignment-summary">
-            <span>Example alignment</span>
-            <strong>83.19%</strong>
-            <p>of matched notes begin within 50 ms · median onset error 20 ms</p>
+            <span>Work-level alignment</span>
+            <strong id="demo-alignment-value">—</strong>
+            <p id="demo-alignment-note">Loading available alignment metrics…</p>
           </article>
         </div>
 
         <div class="demo-downloads" id="demo-downloads">
           <div>
-            <p class="eyebrow">Example downloads</p>
-            <h3>Work 093 files</h3>
+            <p class="eyebrow">Selected-work downloads</p>
+            <h3 id="demo-download-title">Work files</h3>
           </div>
           <div id="demo-download-list" class="demo-download-list"></div>
         </div>
