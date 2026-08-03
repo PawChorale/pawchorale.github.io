@@ -316,6 +316,7 @@ h1 em { color: var(--burgundy); font-weight: 400; }
 .transport { display: grid; grid-template-columns: auto 62px 1fr 62px; gap: 1rem; align-items: center; padding: 1.25rem 1.5rem; border-bottom: 1px solid var(--line); }
 .transport button { display: flex; align-items: center; gap: 0.65rem; min-width: 98px; padding: 0.7rem 1rem; border: 0; background: var(--burgundy); color: white; cursor: pointer; }
 .transport button:hover { background: var(--burgundy-dark); }.transport button span { font-size: 0.75rem; }.transport button b { font-size: 0.72rem; text-transform: uppercase; letter-spacing: 0.08em; }
+.transport button:disabled { background: #94867e; cursor: progress; }
 .transport > span { color: var(--muted); font-family: ui-monospace, SFMono-Regular, Menlo, monospace; font-size: 0.75rem; }
 .transport input { width: 100%; accent-color: var(--burgundy); cursor: pointer; }
 .piano-roll-wrap { position: relative; min-height: 360px; padding: 1rem; overflow-x: auto; background: #2c2421; }

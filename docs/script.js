@@ -199,7 +199,13 @@ async function toggleDemoPlayback() {
   const position = master.ended ? 0 : master.currentTime;
   demoState.audio.forEach((audio) => { audio.currentTime = position; });
   try {
-    await Promise.all([...demoState.audio.values()].map((audio) => audio.play()));
+    const results = await Promise.allSettled(
+      [...demoState.audio.values()].map((audio) => audio.play()),
+    );
+    if (master.paused) throw new Error("Master audio was blocked by the browser");
+    if (results.some((result) => result.status === "rejected")) {
+      console.warn("One or more muted demo stems could not start; the master remains available.");
+    }
     demoState.playing = true;
     button.innerHTML = '<span aria-hidden="true">Ⅱ</span><b>Pause</b>';
     button.setAttribute("aria-label", "Pause demo");
@@ -232,6 +238,7 @@ async function initializeDemo() {
   ];
   const bank = document.querySelector("#demo-audio-bank");
   const controls = document.querySelector("#track-controls");
+  const mediaReady = [];
   sources.forEach((source) => {
     const audio = document.createElement("audio");
     audio.src = `demo/93/${source.audio_file}`;
@@ -239,6 +246,18 @@ async function initializeDemo() {
     audio.muted = !source.enabled;
     bank.append(audio);
     demoState.audio.set(source.part, audio);
+    mediaReady.push(new Promise((resolve, reject) => {
+      if (audio.readyState >= 1) {
+        resolve();
+        return;
+      }
+      audio.addEventListener("loadedmetadata", resolve, { once: true });
+      audio.addEventListener(
+        "error",
+        () => reject(new Error(`${source.audio_file} could not load`)),
+        { once: true },
+      );
+    }));
 
     const label = document.createElement("label");
     label.className = "track-toggle";
@@ -259,13 +278,18 @@ async function initializeDemo() {
   });
   document.querySelector("#demo-progress").max = demoState.data.duration_seconds;
   document.querySelector("#demo-duration").textContent = formatTime(demoState.data.duration_seconds);
-  document.querySelector("#demo-play").addEventListener("click", toggleDemoPlayback);
+  const playButton = document.querySelector("#demo-play");
+  playButton.addEventListener("click", toggleDemoPlayback);
   document.querySelector("#demo-progress").addEventListener("input", (event) => {
     const time = Number(event.target.value);
     demoState.audio.forEach((audio) => { audio.currentTime = time; });
     updateDemoFrame();
   });
   window.addEventListener("resize", () => renderPianoRoll(master.currentTime));
+  await Promise.all(mediaReady);
+  playButton.disabled = false;
+  playButton.setAttribute("aria-label", "Play demo");
+  playButton.innerHTML = '<span aria-hidden="true">▶</span><b>Play</b>';
   document.querySelector("#roll-loading").hidden = true;
   buildDemoDownloads(demoState.data);
   renderPianoRoll(0);
