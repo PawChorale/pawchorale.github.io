@@ -15,6 +15,7 @@
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="theme-color" content="#741f32" />
     <title>PawChorale — Part-aware choral audio–MIDI dataset</title>
+    <link rel="icon" href="assets/favicon.svg?v=1" type="image/svg+xml" />
     <link rel="stylesheet" href="styles.css" />
     <script src="script.js" defer></script>
   </head>
@@ -36,16 +37,36 @@
 
     <main id="main">
       <section class="hero" id="top">
-        <p class="eyebrow">Part-aware choral audio–MIDI dataset</p>
-        <h1>PawChorale</h1>
-        <p class="hero-lede">
-          Mastered choir recordings, isolated vocal parts, and aligned per-part
-          MIDI labels in one research-ready collection.
-        </p>
-        <div class="hero-actions">
-          <a class="button button-primary" href="#download">Download data</a>
-          <a class="button button-secondary" href="#demo">Open interactive demo</a>
+        <div class="hero-grid">
+          <div class="hero-copy">
+            <p class="eyebrow">Part-aware choral audio–MIDI dataset</p>
+            <h1>PawChorale</h1>
+            <p class="hero-lede">
+              Mastered choir recordings, isolated vocal parts, and aligned per-part
+              MIDI labels in one research-ready collection.
+            </p>
+            <div class="hero-actions">
+              <a class="button button-primary" href="#download">Download data</a>
+              <a class="button button-secondary" href="#demo">Open interactive demo</a>
+            </div>
+          </div>
+
+          <div class="hero-visual" role="img" aria-label="A choral paw symbol combining four vocal parts with an audio waveform and piano-roll grid">
+            <div class="hero-visual-ring">
+              <div class="choral-paw" aria-hidden="true">
+                <span class="paw-toe paw-toe-s">S</span>
+                <span class="paw-toe paw-toe-a">A</span>
+                <span class="paw-toe paw-toe-t">T</span>
+                <span class="paw-toe paw-toe-b">B</span>
+                <span class="paw-pad">
+                  <i></i><i></i><i></i><i></i><i></i>
+                </span>
+              </div>
+            </div>
+            <span class="hero-visual-caption">Audio <b>+</b> MIDI</span>
+          </div>
         </div>
+
         <dl class="hero-stats" aria-label="Dataset summary">
           <div><dt>Works</dt><dd>200</dd></div>
           <div><dt>Master audio</dt><dd>6.47 h</dd></div>
