@@ -1,0 +1,244 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="PawChorale is a quality-controlled, part-aware choral audio–MIDI dataset with master mixtures, isolated vocal parts, and note-level labels."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="PawChorale" />
+    <meta
+      property="og:description"
+      content="A quality-controlled, part-aware choral audio–MIDI dataset."
+    />
+    <meta property="og:image" content="https://pawchorale.github.io/assets/og.png" />
+    <meta property="og:url" content="https://pawchorale.github.io/" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="theme-color" content="#7b2635" />
+    <title>PawChorale — Part-aware choral audio–MIDI dataset</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <header class="site-header">
+      <a class="wordmark" href="#top" aria-label="PawChorale home">
+        <span class="mark" aria-hidden="true">
+          <i></i><i></i><i></i><i></i>
+        </span>
+        <span>PawChorale</span>
+      </a>
+      <nav aria-label="Primary navigation">
+        <a href="#dataset">Dataset</a>
+        <a href="#quality">Quality</a>
+        <a href="#download">Download</a>
+        <a href="#catalog">Catalog</a>
+      </nav>
+      <a
+        class="header-github"
+        href="https://github.com/PawChorale/pawchorale.github.io"
+      >GitHub <span aria-hidden="true">↗</span></a>
+    </header>
+
+    <main id="main">
+      <section class="hero" id="top">
+        <div class="hero-copy">
+          <p class="eyebrow">Choral research data · initial curated release</p>
+          <h1>Many voices.<br /><em>One aligned corpus.</em></h1>
+          <p class="hero-lede">
+            PawChorale pairs choral master recordings and isolated vocal parts
+            with part-aware MIDI labels—organized, quality-controlled, and
+            ready for music information retrieval research.
+          </p>
+          <div class="hero-actions">
+            <a class="button button-primary" href="#download">Get the dataset</a>
+            <a class="button button-secondary" href="#quality">Read the QC method</a>
+          </div>
+        </div>
+
+        <div class="hero-score" aria-label="Four vocal parts joining into one waveform">
+          <div class="staff-lines" aria-hidden="true"></div>
+          <div class="voice voice-s"><span>S</span><b></b></div>
+          <div class="voice voice-a"><span>A</span><b></b></div>
+          <div class="voice voice-t"><span>T</span><b></b></div>
+          <div class="voice voice-b"><span>B</span><b></b></div>
+          <div class="waveform" aria-hidden="true">
+            <i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i>
+            <i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i>
+          </div>
+          <p>score labels <span>→</span> aligned audio</p>
+        </div>
+      </section>
+
+      <section class="stat-band" aria-label="Dataset summary">
+        <article><strong>205</strong><span>curated works</span></article>
+        <article><strong>6.95 h</strong><span>master mixtures</span></article>
+        <article><strong>27.82 h</strong><span>isolated parts</span></article>
+        <article><strong>112,682</strong><span>MIDI notes</span></article>
+      </section>
+
+      <section class="section dataset-section" id="dataset">
+        <div class="section-heading">
+          <p class="eyebrow">The dataset</p>
+          <h2>From full choir to individual line.</h2>
+          <p>
+            Every retained work is grouped under one stable public ID. Available
+            voicing is preserved as recorded; a work does not need all four SATB
+            parts to be included.
+          </p>
+        </div>
+
+        <div class="file-map">
+          <div class="folder-card">
+            <div class="folder-tab">Song 001</div>
+            <ul>
+              <li><span class="file-icon audio">♪</span><b>001_master.mp3</b><em>mixture</em></li>
+              <li><span class="file-icon s">S</span><b>001_Soprano.mp3</b><em>part</em></li>
+              <li><span class="file-icon a">A</span><b>001_Alto.mp3</b><em>part</em></li>
+              <li><span class="file-icon t">T</span><b>001_Tenor.mp3</b><em>part</em></li>
+              <li><span class="file-icon b">B</span><b>001_Bass.mp3</b><em>part</em></li>
+              <li><span class="file-icon midi">M</span><b>01_Soprano.mid</b><em>label</em></li>
+              <li class="muted-row"><span class="file-icon meta">{ }</span><b>manifest.json</b><em>metadata</em></li>
+            </ul>
+          </div>
+          <div class="map-notes">
+            <article>
+              <span>01</span>
+              <div><h3>Part-aware audio</h3><p>Master mixture and available isolated voices in MP3 format.</p></div>
+            </article>
+            <article>
+              <span>02</span>
+              <div><h3>Symbolic labels</h3><p>Per-part MIDI tracks retain pitch, onset, and duration.</p></div>
+            </article>
+            <article>
+              <span>03</span>
+              <div><h3>Traceable metadata</h3><p>A public catalog maps every numeric ID back to its work title.</p></div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section quality-section" id="quality">
+        <div class="section-heading light-heading">
+          <p class="eyebrow">Quality control</p>
+          <h2>A conservative, reproducible release filter.</h2>
+          <p>
+            We evaluated pitch coverage, onset precision, and audio–score duration
+            consistency at work level. Any work crossing one or more predeclared
+            thresholds was held out from this release.
+          </p>
+        </div>
+
+        <div class="filter-flow" aria-label="Selection flow">
+          <article><strong>297</strong><span>evaluable works</span></article>
+          <b aria-hidden="true">−</b>
+          <article class="held"><strong>92</strong><span>held out for review</span></article>
+          <b aria-hidden="true">=</b>
+          <article class="retained"><strong>205</strong><span>curated works</span></article>
+        </div>
+
+        <div class="threshold-grid">
+          <article><p>Pitch coverage</p><strong>≥ 25%</strong><span>corrected matched-note rate</span></article>
+          <article><p>Onset precision</p><strong>≥ 50%</strong><span>matched notes within 50 ms</span></article>
+          <article><p>Duration agreement</p><strong>≤ 10%</strong><span>maximum absolute difference</span></article>
+        </div>
+
+        <div class="alignment-card">
+          <div>
+            <p class="eyebrow">Retained-set alignment</p>
+            <h3>89.65% of matched notes begin within 100 ms.</h3>
+            <p>
+              These values summarize available isolated vocal parts after work-level
+              filtering. Missing voice parts are ignored, not counted as failures.
+            </p>
+          </div>
+          <dl>
+            <div><dt>Matched notes</dt><dd>72.81%</dd></div>
+            <div><dt>Median onset error</dt><dd>20 ms</dd></div>
+            <div><dt>Median offset error</dt><dd>45 ms</dd></div>
+          </dl>
+        </div>
+      </section>
+
+      <section class="section download-section" id="download">
+        <div class="section-heading split-heading">
+          <div>
+            <p class="eyebrow">Download</p>
+            <h2>The complete curated release, in four parts.</h2>
+          </div>
+          <p>
+            Archives contain MP3 audio, MIDI labels, and source manifests. The
+            four parts are split only for reliable transfer; together they form
+            the complete 205-work release.
+          </p>
+        </div>
+
+        <div class="release-status" id="release-status" role="status">
+          <span aria-hidden="true"></span>
+          <p><strong>Checking release status…</strong></p>
+        </div>
+        <div class="download-grid" id="download-grid" aria-live="polite"></div>
+        <div class="download-meta">
+          <a href="data/release-manifest.csv" download>Release manifest (.csv) ↓</a>
+          <span>4.66 GiB uncompressed</span>
+          <span>Version 1.0.0</span>
+        </div>
+      </section>
+
+      <section class="section catalog-section" id="catalog">
+        <div class="section-heading split-heading">
+          <div>
+            <p class="eyebrow">Work catalog</p>
+            <h2>Browse all 205 works.</h2>
+          </div>
+          <label class="search-box">
+            <span class="sr-only">Search the catalog</span>
+            <input id="catalog-search" type="search" placeholder="Search title or ID…" />
+            <span aria-hidden="true">⌕</span>
+          </label>
+        </div>
+
+        <div class="catalog-table-wrap">
+          <table>
+            <thead><tr><th>ID</th><th>Work</th><th>Audio parts</th><th>MIDI files</th><th>Archive</th></tr></thead>
+            <tbody id="catalog-body"><tr><td colspan="5">Loading catalog…</td></tr></tbody>
+          </table>
+        </div>
+        <div class="catalog-footer">
+          <p id="catalog-count">205 works</p>
+          <button id="catalog-more" class="text-button" type="button">Show all works ↓</button>
+        </div>
+      </section>
+
+      <section class="section cite-section" id="cite">
+        <div>
+          <p class="eyebrow">Citation</p>
+          <h2>Building with PawChorale?</h2>
+        </div>
+        <div class="citation-placeholder">
+          <p>
+            Citation details will be added with the accompanying paper release.
+            Until then, please cite the dataset name, version, and project URL.
+          </p>
+          <code>PawChorale, version 1.0.0. https://pawchorale.github.io/</code>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <a class="wordmark footer-mark" href="#top">
+        <span class="mark" aria-hidden="true"><i></i><i></i><i></i><i></i></span>
+        <span>PawChorale</span>
+      </a>
+      <p>A part-aware choral audio–MIDI dataset for MIR research.</p>
+      <div>
+        <a href="https://github.com/PawChorale/pawchorale.github.io">GitHub</a>
+        <a href="data/release-manifest.csv">Manifest</a>
+        <span>© <span id="year"></span> PawChorale</span>
+      </div>
+    </footer>
+  </body>
+</html>

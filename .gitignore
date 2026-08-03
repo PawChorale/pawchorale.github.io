@@ -1,0 +1,68 @@
+# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+
+# dependencies
+/node_modules
+/.pnp
+.pnp.*
+.yarn/*
+!.yarn/patches
+!.yarn/plugins
+!.yarn/releases
+!.yarn/versions
+
+# testing
+/coverage
+
+# next.js
+/.next/
+/.vinext/
+/out/
+
+# misc
+.DS_Store
+*.pem
+
+# debug
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.pnpm-debug.log*
+
+# env files (can opt-in for committing if needed)
+.env*
+
+# vercel
+.vercel
+
+# typescript
+next-env.d.ts
+/dist/
+/.wrangler/
+/outputs/
+/work/
+
+# Local release archives are uploaded to GitHub Releases, never committed.
+/release/
+
+# The static GitHub Pages site lives in site/. The following files are remnants
+# of the unused local app starter and are intentionally outside this repository.
+/.openai/
+/app/
+/build/
+/db/
+/drizzle/
+/examples/
+/public/
+/tests/
+/worker/
+/components.json
+/drizzle.config.ts
+/eslint.config.mjs
+/instrumentation-client.ts
+/next.config.ts
+/package-lock.json
+/package.json
+/postcss.config.mjs
+/tsconfig.json
+/vite.config.ts
+/vitest.config.ts
