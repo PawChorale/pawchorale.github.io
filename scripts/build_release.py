@@ -62,6 +62,11 @@ def parse_args() -> argparse.Namespace:
         help="License/rights notice included in every public archive.",
     )
     parser.add_argument(
+        "--personal-permissions-file",
+        type=Path,
+        help="Documented permission covering the four Personal CPDL editions.",
+    )
+    parser.add_argument(
         "--release-published",
         action="store_true",
         help="Enable archive links in the generated website metadata.",
@@ -281,6 +286,8 @@ def build_archives(
     version: str,
     rights_file: Path,
     manifest_path: Path,
+    source_rights_manifest: Path,
+    personal_permissions_file: Path,
 ) -> list[Path]:
     if not rights_file.is_file():
         raise FileNotFoundError(f"Rights notice does not exist: {rights_file}")
@@ -311,6 +318,14 @@ def build_archives(
             handle.write(readme, f"{root_name}/DATASET_README.md")
             handle.write(rights_file, f"{root_name}/RIGHTS_NOTICE.md")
             handle.write(manifest_path, f"{root_name}/release-manifest.csv")
+            handle.write(
+                source_rights_manifest,
+                f"{root_name}/source-rights-manifest.csv",
+            )
+            handle.write(
+                personal_permissions_file,
+                f"{root_name}/PERSONAL_EDITION_PERMISSIONS.md",
+            )
             for song in group:
                 for source in song.files:
                     relative = source.relative_to(song.folder)
@@ -368,12 +383,29 @@ def main() -> int:
                 "Refusing to build public archives without --rights-file. "
                 "Choose and review the dataset release terms first."
             )
+        if (
+            args.personal_permissions_file is None
+            or not args.personal_permissions_file.is_file()
+        ):
+            raise SystemExit(
+                "Refusing to build the 205-work public archives without "
+                "--personal-permissions-file. CPDL marks source editions for "
+                "IDs 169, 183, 190, and 270 as Personal. Obtain permission or "
+                "build a separately defined release that excludes them."
+            )
+        source_rights_manifest = project_dir / "rights" / "source_rights_manifest.csv"
+        if not source_rights_manifest.is_file():
+            raise SystemExit(
+                "Run scripts/audit_cpdl_rights.py before building archives."
+            )
         created = build_archives(
             project_dir,
             groups,
             args.version,
             args.rights_file.resolve(),
             manifest_path,
+            source_rights_manifest,
+            args.personal_permissions_file.resolve(),
         )
 
     checksums: dict[str, str] = {}
@@ -386,10 +418,20 @@ def main() -> int:
         )
         shutil.copy2(manifest_path, project_dir / "release" / manifest_path.name)
 
+    permissions_ready = bool(
+        args.personal_permissions_file and args.personal_permissions_file.is_file()
+    )
+    rights_ready = bool(args.rights_file and permissions_ready)
+    if args.release_published and not rights_ready:
+        raise SystemExit(
+            "Refusing to enable public download links without both the release "
+            "rights notice and documented Personal-edition permissions."
+        )
+
     summary = {
         "release": args.version,
         "downloads_enabled": bool(args.release_published),
-        "rights_status": "provided" if args.rights_file else "pending",
+        "rights_status": "provided" if rights_ready else "pending",
         "song_count": len(songs),
         "total_files": sum(len(song.files) for song in songs),
         "total_bytes": sum(song.total_bytes for song in songs),
