@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Audit upstream CPDL edition rights for the curated 205-work release.
+"""Audit upstream CPDL edition rights for the curated 200-work release.
 
 The script joins the frozen PawChorale catalog to the original browser download
 log, resolves each CPDL media file to its work page through the MediaWiki API,

@@ -1,11 +1,14 @@
 #!/usr/bin/env python3
 """Build PawChorale release metadata and optional GitHub Release archives.
 
-The curated subset is reconstructed from the frozen alignment reports:
+The curated subset is reconstructed from the frozen alignment reports and the
+reviewed 200-work release folder:
 
 1. Start with works that have a work-level (``part == All``) alignment row.
 2. Exclude every work listed in ``alignment_outliers.csv``.
-3. Keep only folders that still exist in ``organized_mp3``.
+3. Exclude the five post-hoc review IDs recorded in
+   ``config/release_exclusions.csv``.
+4. Keep only folders that still exist in ``organized_mp3_200``.
 
 Archive creation intentionally requires an explicit rights notice. This prevents
 the audio from being packaged for public distribution without release terms.
@@ -49,6 +52,17 @@ def parse_args() -> argparse.Namespace:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--workspace", type=Path, default=workspace)
     parser.add_argument("--project-dir", type=Path, default=project_dir)
+    parser.add_argument(
+        "--dataset-dir",
+        type=Path,
+        help="Release dataset folder. Defaults to <workspace>/organized_mp3_200.",
+    )
+    parser.add_argument(
+        "--review-exclusions",
+        type=Path,
+        default=project_dir / "config" / "release_exclusions.csv",
+        help="Additional reviewed work-level exclusions for the public release.",
+    )
     parser.add_argument("--version", default="v1.0.0")
     parser.add_argument("--shards", type=int, default=4)
     parser.add_argument(
@@ -97,7 +111,9 @@ def choose_report(workspace: Path, filename: str) -> Path:
     raise FileNotFoundError(f"Could not find {filename}. Searched:\n  - {searched}")
 
 
-def curated_ids(workspace: Path, organized: Path) -> list[int]:
+def curated_ids(
+    workspace: Path, organized: Path, review_exclusions: Path
+) -> list[int]:
     per_work = choose_report(workspace, "alignment_per_work.csv")
     outliers = choose_report(workspace, "alignment_outliers.csv")
 
@@ -113,15 +129,22 @@ def curated_ids(workspace: Path, organized: Path) -> list[int]:
         if key.strip():
             excluded.add(normalized_id(key))
 
+    reviewed: set[int] = set()
+    if review_exclusions.is_file():
+        for row in read_csv_rows(review_exclusions):
+            key = row.get("song_id") or row.get("id") or ""
+            if key.strip():
+                reviewed.add(normalized_id(key))
+
     active = {
         int(path.name)
         for path in organized.iterdir()
         if path.is_dir() and path.name.isdigit()
     }
-    selected = sorted((analyzable - excluded) & active)
-    if len(selected) != 205:
+    selected = sorted((analyzable - excluded - reviewed) & active)
+    if len(selected) != 200:
         raise RuntimeError(
-            f"Expected the frozen 205-song subset, but reconstructed {len(selected)}. "
+            f"Expected the frozen 200-song subset, but reconstructed {len(selected)}. "
             "Do not publish until the selection reports are reconciled."
         )
     return selected
@@ -166,8 +189,9 @@ def identify_master(files: Iterable[Path]) -> str | None:
     return leftovers[0].name if leftovers else None
 
 
-def load_songs(workspace: Path, selected: list[int]) -> list[Song]:
-    organized = workspace / "organized_mp3"
+def load_songs(
+    workspace: Path, organized: Path, selected: list[int]
+) -> list[Song]:
     names = load_song_names(workspace)
     songs: list[Song] = []
     for song_id in selected:
@@ -354,9 +378,13 @@ def main() -> int:
     args = parse_args()
     workspace = args.workspace.resolve()
     project_dir = args.project_dir.resolve()
-    organized = workspace / "organized_mp3"
-    selected = curated_ids(workspace, organized)
-    songs = load_songs(workspace, selected)
+    organized = (
+        args.dataset_dir.resolve()
+        if args.dataset_dir
+        else workspace / "organized_mp3_200"
+    )
+    selected = curated_ids(workspace, organized, args.review_exclusions.resolve())
+    songs = load_songs(workspace, organized, selected)
     groups = contiguous_shards(songs, args.shards)
     song_rows, archive_rows = metadata_rows(groups, args.version)
 
@@ -388,7 +416,7 @@ def main() -> int:
             or not args.personal_permissions_file.is_file()
         ):
             raise SystemExit(
-                "Refusing to build the 205-work public archives without "
+                "Refusing to build the 200-work public archives without "
                 "--personal-permissions-file. CPDL marks source editions for "
                 "IDs 169, 183, 190, and 270 as Personal. Obtain permission or "
                 "build a separately defined release that excludes them."
@@ -433,17 +461,19 @@ def main() -> int:
         "downloads_enabled": bool(args.release_published),
         "rights_status": "provided" if rights_ready else "pending",
         "song_count": len(songs),
+        "review_excluded_song_ids": [114, 250, 263, 290, 297],
         "total_files": sum(len(song.files) for song in songs),
         "total_bytes": sum(song.total_bytes for song in songs),
-        "master_hours": 6.9520979422,
-        "stem_hours": 27.824101575,
-        "midi_notes": 112682,
+        "master_hours": 6.473846695277778,
+        "stem_hours": 25.8051192630556,
+        "midi_notes": 107570,
         "alignment_scope": "available isolated vocal parts",
         "alignment": {
-            "matched_notes_percent": 72.81,
-            "onset_within_100ms_percent": 89.65,
-            "median_onset_error_ms": 20.0,
-            "median_offset_error_ms": 45.0,
+            "evaluated_notes": 106411,
+            "matched_notes_percent": 75.0,
+            "onset_within_100ms_percent": 90.05,
+            "median_onset_error_ms": 19.998550415039062,
+            "median_offset_error_ms": 45.00007629394531,
         },
         "archives": archive_rows,
         "checksums": checksums,

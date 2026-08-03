@@ -1,6 +1,6 @@
 # PawChorale source-rights audit
 
-This directory records the edition-level rights markers for the 205 works in
+This directory records the edition-level rights markers for the 200 works in
 the initial curated PawChorale release. It is release-review evidence, not legal
 advice.
 
@@ -13,12 +13,12 @@ edition entry on the work page.
 
 | Upstream marker | Works | Release implication |
 | --- | ---: | --- |
-| CPDL | 172 | Preserve attribution, notices, CPDL terms, and downstream freedoms. |
-| Public Domain | 26 | Preserve provenance; verify jurisdiction-specific status where necessary. |
+| CPDL | 168 | Preserve attribution, notices, CPDL terms, and downstream freedoms. |
+| Public Domain | 25 | Preserve provenance; verify jurisdiction-specific status where necessary. |
 | Creative Commons Attribution Non-Commercial | 3 | Preserve attribution and the non-commercial restriction. |
 | Personal | 4 | Obtain and record editor permission or exclude from public download. |
 
-All 205 media URLs and edition markers were resolved. The four `Personal`
+All 200 media URLs and edition markers were resolved. The four `Personal`
 editions requiring permission review are:
 
 - ID 169 — *Angelus ad pastores ait a 4* — editor Aristotle Aure Esguerra

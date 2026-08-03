@@ -21,9 +21,10 @@ From this repository:
 python3 scripts/build_release.py
 ```
 
-The script reconstructs the frozen 205-work subset from the alignment reports
-in the parent PawChorale workspace and updates `docs/data/`. It fails closed if
-the result is not exactly 205 works.
+The script reconstructs the frozen 200-work subset from the alignment reports,
+`config/release_exclusions.csv`, and `organized_mp3_200` in the parent
+PawChorale workspace. It updates `docs/data/` and fails closed if the result is
+not exactly 200 works.
 
 Public ZIP archives require a reviewed dataset rights notice:
 

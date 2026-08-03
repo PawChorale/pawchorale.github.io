@@ -84,17 +84,21 @@ def main() -> int:
     ) as handle:
         manifest = list(csv.DictReader(handle))
 
-    if len(songs) != 205 or len(manifest) != 205:
-        fail(f"Expected 205 catalog rows, found JSON={len(songs)}, CSV={len(manifest)}")
+    if len(songs) != 200 or len(manifest) != 200:
+        fail(f"Expected 200 catalog rows, found JSON={len(songs)}, CSV={len(manifest)}")
     ids = [int(song["id"]) for song in songs]
     if ids != sorted(ids) or len(ids) != len(set(ids)):
         fail("Catalog IDs must be unique and sorted")
-    if summary.get("song_count") != 205:
-        fail("Release summary song_count is not 205")
+    if summary.get("song_count") != 200:
+        fail("Release summary song_count is not 200")
+    if set(summary.get("review_excluded_song_ids", [])) != {114, 250, 263, 290, 297}:
+        fail("Release summary does not record the five reviewed exclusions")
+    if set(ids) & {114, 250, 263, 290, 297}:
+        fail("Reviewed exclusion IDs are still present in the catalog")
     if len(summary.get("archives", [])) != 4:
         fail("Release summary must contain exactly four archives")
-    if sum(item["song_count"] for item in summary["archives"]) != 205:
-        fail("Archive song counts do not sum to 205")
+    if sum(item["song_count"] for item in summary["archives"]) != 200:
+        fail("Archive song counts do not sum to 200")
     if summary.get("downloads_enabled") and summary.get("rights_status") != "provided":
         fail("Downloads cannot be enabled without a provided rights notice")
 
