@@ -36,6 +36,18 @@ python3 scripts/build_release.py \
 The four generated archives are written to the ignored `release/` directory.
 They belong in a GitHub Release, not in Git history or the GitHub Pages artifact.
 
+## Rebuild the interactive demo
+
+The website demo uses retained work 93 because it is compact and has strong
+work-level alignment. Rebuild its piano-roll data and copy its media with:
+
+```bash
+conda run --no-capture-output -n hanyu_env python scripts/build_demo.py
+```
+
+The generated demo includes synchronized master/SATB audio, four MIDI files,
+source manifests, and a compact JSON note representation for the piano roll.
+
 ## Deployment
 
 A push to `main` deploys the contents of `docs/` through GitHub Pages. The

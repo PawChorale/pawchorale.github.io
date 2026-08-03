@@ -1,0 +1,68 @@
+{
+  "schema_version": 2,
+  "source_file": "0840.xml",
+  "source_sha256": "2555ceccddd6280b2853fa695835d3ae7ce58293a5cdd84dcd181fde5496b693",
+  "song_folder": "0840",
+  "title": "0840",
+  "part_count": 4,
+  "converted_midi_count": 4,
+  "conversion_status": "converted",
+  "satb_status": "full_satb",
+  "detected_voices": "Soprano, Alto, Tenor, Bass",
+  "missing_satb": "",
+  "has_instrumental_parts": false,
+  "unknown_parts": "",
+  "run_action": "converted",
+  "warnings": "",
+  "error": "",
+  "parts": [
+    {
+      "part_index": 1,
+      "part_id": "Soprano",
+      "original_name": "Soprano",
+      "abbreviation": "S",
+      "part_kind": "vocal",
+      "detected_voice": "Soprano",
+      "midi_file": "01_Soprano.mid",
+      "note_count": 56,
+      "rest_count": 9,
+      "duration_quarters": 104.0
+    },
+    {
+      "part_index": 2,
+      "part_id": "Alto",
+      "original_name": "Alto",
+      "abbreviation": "A",
+      "part_kind": "vocal",
+      "detected_voice": "Alto",
+      "midi_file": "02_Alto.mid",
+      "note_count": 59,
+      "rest_count": 7,
+      "duration_quarters": 104.0
+    },
+    {
+      "part_index": 3,
+      "part_id": "Tenor",
+      "original_name": "Tenor",
+      "abbreviation": "T",
+      "part_kind": "vocal",
+      "detected_voice": "Tenor",
+      "midi_file": "03_Tenor.mid",
+      "note_count": 65,
+      "rest_count": 7,
+      "duration_quarters": 104.0
+    },
+    {
+      "part_index": 4,
+      "part_id": "Bass",
+      "original_name": "Bass",
+      "abbreviation": "B",
+      "part_kind": "vocal",
+      "detected_voice": "Bass",
+      "midi_file": "04_Bass.mid",
+      "note_count": 68,
+      "rest_count": 7,
+      "duration_quarters": 104.0
+    }
+  ]
+}

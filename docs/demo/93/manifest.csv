@@ -1,0 +1,5 @@
+part_index,part_id,original_name,abbreviation,part_kind,detected_voice,midi_file,note_count,rest_count,duration_quarters
+1,Soprano,Soprano,S,vocal,Soprano,01_Soprano.mid,56,9,104.0
+2,Alto,Alto,A,vocal,Alto,02_Alto.mid,59,7,104.0
+3,Tenor,Tenor,T,vocal,Tenor,03_Tenor.mid,65,7,104.0
+4,Bass,Bass,B,vocal,Bass,04_Bass.mid,68,7,104.0

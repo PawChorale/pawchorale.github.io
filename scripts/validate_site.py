@@ -53,6 +53,13 @@ def main() -> int:
         SITE / "data" / "songs.json",
         SITE / "data" / "release-summary.json",
         SITE / "data" / "release-manifest.csv",
+        SITE / "demo" / "93" / "notes.json",
+        SITE / "demo" / "93" / "93_master.mp3",
+        SITE / "demo" / "93" / "93_Soprano.mp3",
+        SITE / "demo" / "93" / "93_Alto.mp3",
+        SITE / "demo" / "93" / "93_Tenor.mp3",
+        SITE / "demo" / "93" / "93_Bass.mp3",
+        SITE / "demo" / "93" / "RIGHTS_NOTICE.md",
         SITE / ".nojekyll",
     ]
     missing = [str(path.relative_to(PROJECT)) for path in required if not path.is_file()]
@@ -91,10 +98,19 @@ def main() -> int:
     if summary.get("downloads_enabled") and summary.get("rights_status") != "provided":
         fail("Downloads cannot be enabled without a provided rights notice")
 
+    demo = json.loads(
+        (SITE / "demo" / "93" / "notes.json").read_text(encoding="utf-8")
+    )
+    if demo.get("song_id") != 93 or len(demo.get("tracks", [])) != 4:
+        fail("Interactive demo must contain work 93 and four vocal tracks")
+    if sum(track["note_count"] for track in demo["tracks"]) != 251:
+        fail("Interactive demo note count is not 251")
+
     size = sum(path.stat().st_size for path in SITE.rglob("*") if path.is_file())
     print("Site validation passed")
     print(f"HTML IDs: {len(parser.ids)}")
     print(f"Catalog works: {len(songs)}")
+    print("Interactive demo: work 93, 5 synchronized audio tracks, 251 notes")
     print(f"Static site size: {size / 1024**2:.2f} MiB")
     return 0
 
