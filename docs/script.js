@@ -51,7 +51,7 @@ function renderDownloads(summary) {
     status.classList.add("ready");
     status.innerHTML = '<span aria-hidden="true"></span><p><strong>Version 1.0.0 is available.</strong> Download all four parts for the complete release.</p>';
   } else {
-    status.innerHTML = '<span aria-hidden="true"></span><p><strong>Release metadata is ready, pending the dataset rights notice.</strong> The public archive links will activate after the terms are approved.</p>';
+    status.innerHTML = '<span aria-hidden="true"></span><p><strong>Full archives are not public yet.</strong> The 205-work package is prepared and awaiting four source permissions; the catalog and example files are available above.</p>';
   }
 }
 
