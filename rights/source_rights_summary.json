@@ -4,15 +4,13 @@
   "resolved_edition_licenses": 200,
   "unresolved_mapping_song_ids": [],
   "edition_license_counts": {
-    "CPDL": 168,
+    "CPDL": 172,
     "Creative Commons Attribution Non-Commercial": 3,
-    "Personal": 4,
     "Public Domain": 25
   },
   "rights_review_status_counts": {
-    "permission_or_terms_review_required": 4,
     "public_domain_marker": 25,
-    "redistributable_cpdl_terms": 168,
+    "redistributable_cpdl_terms": 172,
     "review_creative_commons_variant": 3
   },
   "method": "Joined each selected work to the original CPDL media URL, resolved the media file page through the official MediaWiki API, and parsed the matching score entry's edition-level Copy marker.",

@@ -16,6 +16,7 @@ import time
 import unicodedata
 import urllib.parse
 import urllib.request
+from urllib.error import HTTPError, URLError
 from collections import Counter
 from pathlib import Path
 
@@ -83,11 +84,33 @@ def api_file_query(titles: list[str]) -> list[dict]:
     return payload.get("query", {}).get("pages", [])
 
 
+def resilient_query(query, titles: list[str]) -> list[dict]:
+    """Retry transient API failures and isolate a title that breaks a batch."""
+
+    for attempt in range(3):
+        try:
+            return query(titles)
+        except (HTTPError, URLError, TimeoutError) as error:
+            retryable = not isinstance(error, HTTPError) or error.code >= 500
+            if not retryable:
+                raise
+            if attempt < 2:
+                time.sleep(0.5 * (2**attempt))
+                continue
+            if len(titles) > 1:
+                pages: list[dict] = []
+                for title in titles:
+                    pages.extend(resilient_query(query, [title]))
+                return pages
+            raise
+    raise RuntimeError("Unreachable rights-audit retry state")
+
+
 def fetch_pages(titles: list[str]) -> dict[str, str]:
     results: dict[str, str] = {}
     unique = sorted(set(titles))
     for offset in range(0, len(unique), 20):
-        for page in api_query(unique[offset : offset + 20]):
+        for page in resilient_query(api_query, unique[offset : offset + 20]):
             revisions = page.get("revisions", [])
             content = ""
             if revisions:
@@ -101,7 +124,7 @@ def fetch_file_work_titles(titles: list[str]) -> dict[str, str]:
     results: dict[str, str] = {}
     unique = sorted(set(titles))
     for offset in range(0, len(unique), 20):
-        for page in api_file_query(unique[offset : offset + 20]):
+        for page in resilient_query(api_file_query, unique[offset : offset + 20]):
             filename = page.get("title", "").removeprefix("File:")
             usages = [
                 item["title"]

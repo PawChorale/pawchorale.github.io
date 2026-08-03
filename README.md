@@ -31,14 +31,14 @@ Public ZIP archives require a reviewed dataset rights notice:
 ```bash
 python3 scripts/build_release.py \
   --build-archives \
-  --rights-file /absolute/path/to/RIGHTS_NOTICE.md \
-  --personal-permissions-file /absolute/path/to/PERSONAL_EDITION_PERMISSIONS.md
+  --rights-file rights/DATASET_RIGHTS_NOTICE.md
 ```
 
 The four generated archives are written to the ignored `release/` directory.
 They belong in a GitHub Release, not in Git history or the GitHub Pages artifact.
-The permission file is required because CPDL marks four retained source editions
-as `Personal`; the packager fails closed until those permissions are documented.
+The packager fails closed if the rights manifest does not exactly match the
+selected release. If a future subset retains any `Personal` editions, it also
+requires `--personal-permissions-file` covering those editions.
 
 ## Rebuild the source-rights audit
 

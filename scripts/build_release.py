@@ -21,15 +21,19 @@ import csv
 import hashlib
 import json
 import os
+import re
 import shutil
+import statistics
+import subprocess
 import sys
 import zipfile
+from concurrent.futures import ThreadPoolExecutor
 from dataclasses import dataclass
 from pathlib import Path
 from typing import Iterable
 
 
-RELEASE_FILES = {".mp3", ".mid", ".midi", ".csv", ".json"}
+RELEASE_FILES = {".mp3", ".mid", ".midi", ".xml", ".csv", ".json"}
 PART_NAMES = ("soprano", "alto", "tenor", "bass")
 
 
@@ -78,7 +82,7 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument(
         "--personal-permissions-file",
         type=Path,
-        help="Documented permission covering the four Personal CPDL editions.",
+        help="Documented permission for any retained Personal CPDL editions.",
     )
     parser.add_argument(
         "--release-published",
@@ -218,6 +222,99 @@ def load_songs(
     return songs
 
 
+def audio_duration_seconds(path: Path) -> float:
+    process = subprocess.run(
+        ["/usr/bin/afinfo", str(path)],
+        check=True,
+        capture_output=True,
+        text=True,
+    )
+    match = re.search(
+        r"estimated duration:\s*([0-9.]+)\s*sec",
+        process.stdout,
+        flags=re.IGNORECASE,
+    )
+    if match is None:
+        raise ValueError(f"Could not read audio duration: {path}")
+    return float(match.group(1))
+
+
+def release_statistics(
+    workspace: Path,
+    organized: Path,
+    songs: list[Song],
+    selected: list[int],
+) -> dict[str, object]:
+    """Derive release statistics from the exact selected folders and evidence."""
+
+    audio_rows = [
+        (song, path)
+        for song in songs
+        for path in song.files
+        if path.suffix.casefold() == ".mp3"
+    ]
+    with ThreadPoolExecutor(max_workers=8) as executor:
+        durations = list(executor.map(lambda item: audio_duration_seconds(item[1]), audio_rows))
+    master_seconds = sum(
+        duration
+        for (song, path), duration in zip(audio_rows, durations)
+        if path.name == song.master_file
+    )
+    stem_seconds = sum(
+        duration
+        for (song, path), duration in zip(audio_rows, durations)
+        if path.name != song.master_file
+    )
+
+    audit_path = organized / "choral_mixture_build_audit.csv"
+    audit_rows = read_csv_rows(audit_path)
+    audit_by_id = {
+        normalized_id(row["song_id"]): row
+        for row in audit_rows
+        if row.get("song_id", "").strip()
+    }
+    if set(audit_by_id) != set(selected):
+        raise RuntimeError(
+            "The choral-mixture build audit does not exactly match the release IDs."
+        )
+    midi_notes = sum(int(audit_by_id[song_id]["note_events"]) for song_id in selected)
+
+    per_note_path = choose_report(workspace, "alignment_per_note.csv")
+    note_rows = [
+        row
+        for row in read_csv_rows(per_note_path)
+        if normalized_id(row["song_id"]) in set(selected)
+    ]
+    matched_rows = [
+        row for row in note_rows if row.get("corrected_matched", "").casefold() == "true"
+    ]
+    onset_errors = [
+        abs(float(row["corrected_onset_error_ms"]))
+        for row in matched_rows
+        if row.get("corrected_onset_error_ms", "").strip()
+    ]
+    offset_errors = [
+        abs(float(row["corrected_offset_error_ms"]))
+        for row in matched_rows
+        if row.get("corrected_offset_error_ms", "").strip()
+    ]
+    alignment = {
+        "evaluated_notes": len(note_rows),
+        "matched_notes_percent": len(matched_rows) / len(note_rows) * 100.0,
+        "onset_within_100ms_percent": (
+            sum(error <= 100.0 for error in onset_errors) / len(onset_errors) * 100.0
+        ),
+        "median_onset_error_ms": statistics.median(onset_errors),
+        "median_offset_error_ms": statistics.median(offset_errors),
+    }
+    return {
+        "master_hours": master_seconds / 3600.0,
+        "stem_hours": stem_seconds / 3600.0,
+        "midi_notes": midi_notes,
+        "alignment": alignment,
+    }
+
+
 def contiguous_shards(songs: list[Song], shard_count: int) -> list[list[Song]]:
     if shard_count < 1 or shard_count > len(songs):
         raise ValueError("--shards must be between 1 and the number of songs")
@@ -311,7 +408,7 @@ def build_archives(
     rights_file: Path,
     manifest_path: Path,
     source_rights_manifest: Path,
-    personal_permissions_file: Path,
+    personal_permissions_file: Path | None,
 ) -> list[Path]:
     if not rights_file.is_file():
         raise FileNotFoundError(f"Rights notice does not exist: {rights_file}")
@@ -326,7 +423,8 @@ def build_archives(
         "This archive is one part of the PawChorale curated release. "
         "Folders use the public song IDs recorded in release-manifest.csv.\n\n"
         "Each available work contains a master mixture, isolated vocal parts, "
-        "MIDI labels, and source manifests. Voicing is variable; a work is not "
+        "per-part and mixture MIDI labels, MusicXML, and source manifests. "
+        "Voicing is variable; a work is not "
         "required to contain all four SATB parts.\n",
         encoding="utf-8",
     )
@@ -346,10 +444,11 @@ def build_archives(
                 source_rights_manifest,
                 f"{root_name}/source-rights-manifest.csv",
             )
-            handle.write(
-                personal_permissions_file,
-                f"{root_name}/PERSONAL_EDITION_PERMISSIONS.md",
-            )
+            if personal_permissions_file is not None:
+                handle.write(
+                    personal_permissions_file,
+                    f"{root_name}/PERSONAL_EDITION_PERMISSIONS.md",
+                )
             for song in group:
                 for source in song.files:
                     relative = source.relative_to(song.folder)
@@ -385,6 +484,7 @@ def main() -> int:
     )
     selected = curated_ids(workspace, organized, args.review_exclusions.resolve())
     songs = load_songs(workspace, organized, selected)
+    statistics_ = release_statistics(workspace, organized, songs, selected)
     groups = contiguous_shards(songs, args.shards)
     song_rows, archive_rows = metadata_rows(groups, args.version)
 
@@ -404,6 +504,23 @@ def main() -> int:
     write_csv(manifest_path, song_rows, fields)
     write_json(site_data / "songs.json", song_rows)
 
+    source_rights_manifest = project_dir / "rights" / "source_rights_manifest.csv"
+    rights_rows = (
+        read_csv_rows(source_rights_manifest)
+        if source_rights_manifest.is_file()
+        else []
+    )
+    rights_ids = {
+        normalized_id(row["song_id"])
+        for row in rights_rows
+        if row.get("song_id", "").strip()
+    }
+    personal_ids = sorted(
+        normalized_id(row["song_id"])
+        for row in rights_rows
+        if row.get("edition_license", "").strip().casefold() == "personal"
+    )
+
     created: list[Path] = []
     if args.build_archives:
         if args.rights_file is None:
@@ -411,20 +528,22 @@ def main() -> int:
                 "Refusing to build public archives without --rights-file. "
                 "Choose and review the dataset release terms first."
             )
-        if (
+        if not source_rights_manifest.is_file():
+            raise SystemExit(
+                "Run scripts/audit_cpdl_rights.py before building archives."
+            )
+        if rights_ids != set(selected):
+            raise SystemExit(
+                "The source-rights manifest does not exactly match the selected "
+                "release IDs. Re-run scripts/audit_cpdl_rights.py."
+            )
+        if personal_ids and (
             args.personal_permissions_file is None
             or not args.personal_permissions_file.is_file()
         ):
             raise SystemExit(
-                "Refusing to build the 200-work public archives without "
-                "--personal-permissions-file. CPDL marks source editions for "
-                "IDs 169, 183, 190, and 270 as Personal. Obtain permission or "
-                "build a separately defined release that excludes them."
-            )
-        source_rights_manifest = project_dir / "rights" / "source_rights_manifest.csv"
-        if not source_rights_manifest.is_file():
-            raise SystemExit(
-                "Run scripts/audit_cpdl_rights.py before building archives."
+                "Refusing to build public archives without documented permission "
+                f"for retained Personal editions: {personal_ids}."
             )
         created = build_archives(
             project_dir,
@@ -433,7 +552,11 @@ def main() -> int:
             args.rights_file.resolve(),
             manifest_path,
             source_rights_manifest,
-            args.personal_permissions_file.resolve(),
+            (
+                args.personal_permissions_file.resolve()
+                if args.personal_permissions_file
+                else None
+            ),
         )
 
     checksums: dict[str, str] = {}
@@ -445,11 +568,25 @@ def main() -> int:
             encoding="utf-8",
         )
         shutil.copy2(manifest_path, project_dir / "release" / manifest_path.name)
+    else:
+        # Preserve checksums when toggling an already-built release to published.
+        sums_path = project_dir / "release" / "SHA256SUMS.txt"
+        if sums_path.is_file():
+            for line in sums_path.read_text(encoding="utf-8").splitlines():
+                digest, separator, name = line.partition("  ")
+                if separator and digest and name:
+                    checksums[name] = digest
 
-    permissions_ready = bool(
+    permissions_ready = not personal_ids or bool(
         args.personal_permissions_file and args.personal_permissions_file.is_file()
     )
-    rights_ready = bool(args.rights_file and permissions_ready)
+    rights_ready = bool(
+        args.rights_file
+        and args.rights_file.is_file()
+        and source_rights_manifest.is_file()
+        and rights_ids == set(selected)
+        and permissions_ready
+    )
     if args.release_published and not rights_ready:
         raise SystemExit(
             "Refusing to enable public download links without both the release "
@@ -461,20 +598,14 @@ def main() -> int:
         "downloads_enabled": bool(args.release_published),
         "rights_status": "provided" if rights_ready else "pending",
         "song_count": len(songs),
-        "review_excluded_song_ids": [114, 250, 263, 290, 297],
+        "review_excluded_song_ids": [263],
         "total_files": sum(len(song.files) for song in songs),
         "total_bytes": sum(song.total_bytes for song in songs),
-        "master_hours": 6.473846695277778,
-        "stem_hours": 25.8051192630556,
-        "midi_notes": 107570,
+        "master_hours": statistics_["master_hours"],
+        "stem_hours": statistics_["stem_hours"],
+        "midi_notes": statistics_["midi_notes"],
         "alignment_scope": "available isolated vocal parts",
-        "alignment": {
-            "evaluated_notes": 106411,
-            "matched_notes_percent": 75.0,
-            "onset_within_100ms_percent": 90.05,
-            "median_onset_error_ms": 19.998550415039062,
-            "median_offset_error_ms": 45.00007629394531,
-        },
+        "alignment": statistics_["alignment"],
         "archives": archive_rows,
         "checksums": checksums,
     }

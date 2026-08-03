@@ -68,10 +68,10 @@
         </div>
 
         <dl class="hero-stats" aria-label="Dataset summary">
-          <div><dt>Works</dt><dd>200</dd></div>
-          <div><dt>Master audio</dt><dd>6.47 h</dd></div>
-          <div><dt>Isolated parts</dt><dd>25.81 h</dd></div>
-          <div><dt>Vocal MIDI notes</dt><dd>107,570</dd></div>
+          <div><dt>Works</dt><dd id="stat-works">200</dd></div>
+          <div><dt>Master audio</dt><dd id="stat-master-hours">—</dd></div>
+          <div><dt>Isolated parts</dt><dd id="stat-stem-hours">—</dd></div>
+          <div><dt>Vocal MIDI notes</dt><dd id="stat-midi-notes">—</dd></div>
         </dl>
       </section>
 
@@ -82,9 +82,8 @@
             <h2>Get PawChorale.</h2>
           </div>
           <p>
-            The complete release contains all 200 curated works. While the full
-            archives await final source permissions, the catalog manifest and a
-            complete example work are available now.
+            The complete release contains all 200 curated works, distributed in
+            four ZIP archives for reliable direct downloads.
           </p>
         </div>
 
@@ -93,7 +92,7 @@
             <div>
               <span class="release-kicker">PawChorale v1.0.0</span>
               <h3>Complete dataset</h3>
-              <p>200 works · MP3 audio · part-aware MIDI · source manifests</p>
+              <p>200 works · MP3 · part + mixture MIDI · MusicXML · manifests</p>
             </div>
             <div class="release-links">
               <a class="button button-primary" href="data/release-manifest.csv" download>Download catalog CSV</a>
@@ -108,7 +107,7 @@
 
         <div class="archive-heading">
           <h3>Full-release archives</h3>
-          <span>4 parts · 4.34 GiB uncompressed</span>
+          <span id="archive-total">4 parts</span>
         </div>
         <div class="download-grid" id="download-grid" aria-live="polite"></div>
         <div class="download-meta">
@@ -223,9 +222,9 @@
         <div class="content-grid">
           <article><span>Audio</span><h3>Master mixtures</h3><p>One mastered choir recording for each retained work.</p></article>
           <article><span>Parts</span><h3>Isolated voices</h3><p>Available Soprano, Alto, Tenor, and Bass recordings.</p></article>
-          <article><span>Labels</span><h3>MIDI + metadata</h3><p>Per-part notes, source records, and rendering manifests.</p></article>
+          <article><span>Labels</span><h3>MIDI + MusicXML</h3><p>Per-part and mixture notes, original scores, source records, and rendering manifests.</p></article>
         </div>
-        <code class="folder-example">001/ · 001_master.mp3 · 001_Soprano.mp3 · 01_Soprano.mid · manifest.json</code>
+        <code class="folder-example">001/ · 001_master.mp3 · 001_Soprano.mp3 · 01_Soprano.mid · choral_mixture.midi · choral_music_score.xml</code>
       </section>
 
       <section class="section catalog-section" id="catalog">

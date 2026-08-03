@@ -1,65 +1,66 @@
 {
   "release": "v1.0.0",
   "downloads_enabled": false,
-  "rights_status": "pending",
+  "rights_status": "provided",
   "song_count": 200,
   "review_excluded_song_ids": [
-    114,
-    250,
-    263,
-    290,
-    297
+    263
   ],
-  "total_files": 2226,
-  "total_bytes": 4654777462,
-  "master_hours": 6.473846695277778,
-  "stem_hours": 25.8051192630556,
-  "midi_notes": 107570,
+  "total_files": 2628,
+  "total_bytes": 4941327149,
+  "master_hours": 6.801596355277777,
+  "stem_hours": 27.222095227222223,
+  "midi_notes": 110702,
   "alignment_scope": "available isolated vocal parts",
   "alignment": {
-    "evaluated_notes": 106411,
-    "matched_notes_percent": 75.0,
-    "onset_within_100ms_percent": 90.05,
+    "evaluated_notes": 109543,
+    "matched_notes_percent": 73.13566362067864,
+    "onset_within_100ms_percent": 89.67733882543844,
     "median_onset_error_ms": 19.998550415039062,
-    "median_offset_error_ms": 45.00007629394531
+    "median_offset_error_ms": 44.99959945678711
   },
   "archives": [
     {
       "part": 1,
-      "asset": "PawChorale-1.0.0-part-01-songs-001-083.zip",
+      "asset": "PawChorale-1.0.0-part-01-songs-001-094.zip",
       "first_song_id": 1,
-      "last_song_id": 83,
-      "song_count": 53,
-      "uncompressed_bytes": 1169484414,
-      "download_url": "https://github.com/PawChorale/pawchorale.github.io/releases/download/v1.0.0/PawChorale-1.0.0-part-01-songs-001-083.zip"
+      "last_song_id": 94,
+      "song_count": 58,
+      "uncompressed_bytes": 1243819051,
+      "download_url": "https://github.com/PawChorale/pawchorale.github.io/releases/download/v1.0.0/PawChorale-1.0.0-part-01-songs-001-094.zip"
     },
     {
       "part": 2,
-      "asset": "PawChorale-1.0.0-part-02-songs-084-187.zip",
-      "first_song_id": 84,
-      "last_song_id": 187,
-      "song_count": 53,
-      "uncompressed_bytes": 1208369726,
-      "download_url": "https://github.com/PawChorale/pawchorale.github.io/releases/download/v1.0.0/PawChorale-1.0.0-part-02-songs-084-187.zip"
+      "asset": "PawChorale-1.0.0-part-02-songs-096-194.zip",
+      "first_song_id": 96,
+      "last_song_id": 194,
+      "song_count": 51,
+      "uncompressed_bytes": 1228804275,
+      "download_url": "https://github.com/PawChorale/pawchorale.github.io/releases/download/v1.0.0/PawChorale-1.0.0-part-02-songs-096-194.zip"
     },
     {
       "part": 3,
-      "asset": "PawChorale-1.0.0-part-03-songs-190-247.zip",
-      "first_song_id": 190,
-      "last_song_id": 247,
-      "song_count": 51,
-      "uncompressed_bytes": 1120423999,
-      "download_url": "https://github.com/PawChorale/pawchorale.github.io/releases/download/v1.0.0/PawChorale-1.0.0-part-03-songs-190-247.zip"
+      "asset": "PawChorale-1.0.0-part-03-songs-195-253.zip",
+      "first_song_id": 195,
+      "last_song_id": 253,
+      "song_count": 50,
+      "uncompressed_bytes": 1323460668,
+      "download_url": "https://github.com/PawChorale/pawchorale.github.io/releases/download/v1.0.0/PawChorale-1.0.0-part-03-songs-195-253.zip"
     },
     {
       "part": 4,
-      "asset": "PawChorale-1.0.0-part-04-songs-248-307.zip",
-      "first_song_id": 248,
+      "asset": "PawChorale-1.0.0-part-04-songs-254-307.zip",
+      "first_song_id": 254,
       "last_song_id": 307,
-      "song_count": 43,
-      "uncompressed_bytes": 1156499323,
-      "download_url": "https://github.com/PawChorale/pawchorale.github.io/releases/download/v1.0.0/PawChorale-1.0.0-part-04-songs-248-307.zip"
+      "song_count": 41,
+      "uncompressed_bytes": 1145243155,
+      "download_url": "https://github.com/PawChorale/pawchorale.github.io/releases/download/v1.0.0/PawChorale-1.0.0-part-04-songs-254-307.zip"
     }
   ],
-  "checksums": {}
+  "checksums": {
+    "PawChorale-1.0.0-part-01-songs-001-094.zip": "919a307b0289afec7741c520390525fd70764e3ed13d96b2d42b518cae08144f",
+    "PawChorale-1.0.0-part-02-songs-096-194.zip": "4470f169b03ed069aacc2b5cdcbe438622ceaeff1221b1bc685fec38e1f1951b",
+    "PawChorale-1.0.0-part-03-songs-195-253.zip": "6255bed51cbaa85d03cb8cb380a9e2e12b3ff060cf8c1857681d8b0c40f340f3",
+    "PawChorale-1.0.0-part-04-songs-254-307.zip": "939537af377038926abbb935b672e371e11845b6916fa64d0123b016d259c23a"
+  }
 }

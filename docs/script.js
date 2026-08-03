@@ -41,7 +41,7 @@ function renderDownloads(summary) {
             <span class="part-size">${formatBytes(archive.uncompressed_bytes)}</span>
           </header>
           <h3>Songs ${String(archive.first_song_id).padStart(3, "0")}–${String(archive.last_song_id).padStart(3, "0")}</h3>
-          <p>${archive.song_count} curated works · MP3 + MIDI + manifests</p>
+          <p>${archive.song_count} curated works · MP3 + MIDI + MusicXML</p>
           ${action}
         </article>`;
     })
@@ -51,8 +51,16 @@ function renderDownloads(summary) {
     status.classList.add("ready");
     status.innerHTML = '<span aria-hidden="true"></span><p><strong>Version 1.0.0 is available.</strong> Download all four parts for the complete release.</p>';
   } else {
-    status.innerHTML = '<span aria-hidden="true"></span><p><strong>Full archives are not public yet.</strong> The 200-work package is prepared and awaiting four source permissions; the catalog and example files are available above.</p>';
+    status.innerHTML = '<span aria-hidden="true"></span><p><strong>Full archives are not public yet.</strong> The catalog and example files remain available while the release assets are prepared.</p>';
   }
+}
+
+function renderDatasetStats(summary) {
+  document.querySelector("#stat-works").textContent = summary.song_count.toLocaleString();
+  document.querySelector("#stat-master-hours").textContent = `${summary.master_hours.toFixed(2)} h`;
+  document.querySelector("#stat-stem-hours").textContent = `${summary.stem_hours.toFixed(2)} h`;
+  document.querySelector("#stat-midi-notes").textContent = summary.midi_notes.toLocaleString();
+  document.querySelector("#archive-total").textContent = `${summary.archives.length} parts · ${formatBytes(summary.total_bytes)} uncompressed`;
 }
 
 function renderCatalog() {
@@ -306,6 +314,7 @@ async function initialize() {
     const [summary, songs] = await Promise.all([summaryResponse.json(), songsResponse.json()]);
     state.songs = songs;
     state.filtered = songs;
+    renderDatasetStats(summary);
     renderDownloads(summary);
     renderCatalog();
     await initializeDemo();

@@ -6,9 +6,9 @@
     "archive_part": 1,
     "master_file": "1_master.mp3",
     "stem_count": 4,
-    "midi_count": 4,
-    "file_count": 11,
-    "bytes": 7051265
+    "midi_count": 5,
+    "file_count": 13,
+    "bytes": 7284221
   },
   {
     "id": 2,
@@ -17,9 +17,9 @@
     "archive_part": 1,
     "master_file": "2_master.mp3",
     "stem_count": 4,
-    "midi_count": 6,
-    "file_count": 13,
-    "bytes": 26921054
+    "midi_count": 7,
+    "file_count": 15,
+    "bytes": 27322365
   },
   {
     "id": 3,
@@ -28,9 +28,9 @@
     "archive_part": 1,
     "master_file": "3_master.mp3",
     "stem_count": 4,
-    "midi_count": 4,
-    "file_count": 11,
-    "bytes": 13925318
+    "midi_count": 5,
+    "file_count": 13,
+    "bytes": 14053914
   },
   {
     "id": 4,
@@ -39,9 +39,9 @@
     "archive_part": 1,
     "master_file": "4_master.mp3",
     "stem_count": 4,
-    "midi_count": 4,
-    "file_count": 11,
-    "bytes": 24413766
+    "midi_count": 5,
+    "file_count": 13,
+    "bytes": 24667042
   },
   {
     "id": 5,
@@ -50,9 +50,9 @@
     "archive_part": 1,
     "master_file": "5_master.mp3",
     "stem_count": 4,
-    "midi_count": 6,
-    "file_count": 13,
-    "bytes": 53623741
+    "midi_count": 7,
+    "file_count": 15,
+    "bytes": 54306751
   },
   {
     "id": 6,
@@ -61,9 +61,9 @@
     "archive_part": 1,
     "master_file": "6_master.mp3",
     "stem_count": 4,
-    "midi_count": 4,
-    "file_count": 11,
-    "bytes": 10664636
+    "midi_count": 5,
+    "file_count": 13,
+    "bytes": 10765561
   },
   {
     "id": 7,
@@ -72,9 +72,9 @@
     "archive_part": 1,
     "master_file": "7_master.mp3",
     "stem_count": 4,
-    "midi_count": 4,
-    "file_count": 11,
-    "bytes": 7611093
+    "midi_count": 5,
+    "file_count": 13,
+    "bytes": 7678676
   },
   {
     "id": 11,
@@ -83,9 +83,9 @@
     "archive_part": 1,
     "master_file": "11_master.mp3",
     "stem_count": 4,
-    "midi_count": 4,
-    "file_count": 11,
-    "bytes": 33720609
+    "midi_count": 5,
+    "file_count": 13,
+    "bytes": 34235611
   },
   {
     "id": 12,
@@ -94,9 +94,9 @@
     "archive_part": 1,
     "master_file": "12_master.mp3",
     "stem_count": 4,
-    "midi_count": 4,
-    "file_count": 11,
-    "bytes": 13282142
+    "midi_count": 5,
+    "file_count": 13,
+    "bytes": 13393455
   },
   {
     "id": 13,
@@ -105,9 +105,9 @@
     "archive_part": 1,
     "master_file": "13_master.mp3",
     "stem_count": 4,
-    "midi_count": 4,
-    "file_count": 11,
-    "bytes": 77964729
+    "midi_count": 5,
+    "file_count": 13,
+    "bytes": 78463324
   },
   {
     "id": 14,
@@ -116,9 +116,9 @@
     "archive_part": 1,
     "master_file": "14_master.mp3",
     "stem_count": 4,
-    "midi_count": 4,
-    "file_count": 11,
-    "bytes": 13883659
+    "midi_count": 5,
+    "file_count": 13,
+    "bytes": 14041661
   },
   {
     "id": 16,
@@ -127,9 +127,9 @@
     "archive_part": 1,
     "master_file": "16_master.mp3",
     "stem_count": 4,
-    "midi_count": 4,
-    "file_count": 11,
-    "bytes": 9212152
+    "midi_count": 5,
+    "file_count": 13,
+    "bytes": 9340436
   },
   {
     "id": 19,
@@ -138,9 +138,9 @@
     "archive_part": 1,
     "master_file": "19_master.mp3",
     "stem_count": 4,
-    "midi_count": 4,
-    "file_count": 11,
-    "bytes": 6257273
+    "midi_count": 5,
+    "file_count": 13,
+    "bytes": 6309775
   },
   {
     "id": 20,
@@ -149,9 +149,9 @@
     "archive_part": 1,
     "master_file": "20_master.mp3",
     "stem_count": 4,
-    "midi_count": 4,
-    "file_count": 11,
-    "bytes": 23566707
+    "midi_count": 5,
+    "file_count": 13,
+    "bytes": 23805196
   },
   {
     "id": 21,
@@ -160,9 +160,9 @@
     "archive_part": 1,
     "master_file": "21_master.mp3",
     "stem_count": 4,
-    "midi_count": 4,
-    "file_count": 11,
-    "bytes": 9325618
+    "midi_count": 5,
+    "file_count": 13,
+    "bytes": 9437810
   },
   {
     "id": 22,
@@ -171,9 +171,9 @@
     "archive_part": 1,
     "master_file": "22_master.mp3",
     "stem_count": 4,
-    "midi_count": 4,
-    "file_count": 11,
-    "bytes": 14255993
+    "midi_count": 5,
+    "file_count": 13,
+    "bytes": 14331904
   },
   {
     "id": 23,
@@ -182,9 +182,9 @@
     "archive_part": 1,
     "master_file": "23_master.mp3",
     "stem_count": 4,
-    "midi_count": 4,
-    "file_count": 11,
-    "bytes": 11614724
+    "midi_count": 5,
+    "file_count": 13,
+    "bytes": 11705150
   },
   {
     "id": 24,
@@ -193,9 +193,9 @@
     "archive_part": 1,
     "master_file": "24_master.mp3",
     "stem_count": 4,
-    "midi_count": 4,
-    "file_count": 11,
-    "bytes": 11610470
+    "midi_count": 5,
+    "file_count": 13,
+    "bytes": 11770959
   },
   {
     "id": 26,
@@ -204,9 +204,9 @@
     "archive_part": 1,
     "master_file": "26_master.mp3",
     "stem_count": 4,
-    "midi_count": 4,
-    "file_count": 11,
-    "bytes": 14418230
+    "midi_count": 5,
+    "file_count": 13,
+    "bytes": 14661437
   },
   {
     "id": 36,
@@ -215,9 +215,9 @@
     "archive_part": 1,
     "master_file": "36_master.mp3",
     "stem_count": 4,
-    "midi_count": 4,
-    "file_count": 11,
-    "bytes": 32420287
+    "midi_count": 5,
+    "file_count": 13,
+    "bytes": 32815706
   },
   {
     "id": 40,
@@ -226,9 +226,9 @@
     "archive_part": 1,
     "master_file": "40_master.mp3",
     "stem_count": 4,
-    "midi_count": 6,
-    "file_count": 13,
-    "bytes": 28938233
+    "midi_count": 7,
+    "file_count": 15,
+    "bytes": 29320776
   },
   {
     "id": 41,
@@ -237,9 +237,9 @@
     "archive_part": 1,
     "master_file": "41_master.mp3",
     "stem_count": 4,
-    "midi_count": 4,
-    "file_count": 11,
-    "bytes": 8327933
+    "midi_count": 5,
+    "file_count": 13,
+    "bytes": 8409354
   },
   {
     "id": 42,
@@ -248,9 +248,9 @@
     "archive_part": 1,
     "master_file": "42_master.mp3",
     "stem_count": 4,
-    "midi_count": 4,
-    "file_count": 11,
-    "bytes": 25934096
+    "midi_count": 5,
+    "file_count": 13,
+    "bytes": 26210371
   },
   {
     "id": 43,
@@ -259,9 +259,9 @@
     "archive_part": 1,
     "master_file": "43_master.mp3",
     "stem_count": 4,
-    "midi_count": 6,
-    "file_count": 13,
-    "bytes": 28974944
+    "midi_count": 7,
+    "file_count": 15,
+    "bytes": 29302238
   },
   {
     "id": 45,
@@ -270,9 +270,9 @@
     "archive_part": 1,
     "master_file": "45_master.mp3",
     "stem_count": 4,
-    "midi_count": 5,
-    "file_count": 12,
-    "bytes": 14216136
+    "midi_count": 6,
+    "file_count": 14,
+    "bytes": 14377607
   },
   {
     "id": 46,
@@ -281,9 +281,9 @@
     "archive_part": 1,
     "master_file": "46_master.mp3",
     "stem_count": 4,
-    "midi_count": 4,
-    "file_count": 11,
-    "bytes": 8570759
+    "midi_count": 5,
+    "file_count": 13,
+    "bytes": 8676521
   },
   {
     "id": 48,
@@ -292,9 +292,9 @@
     "archive_part": 1,
     "master_file": "48_master.mp3",
     "stem_count": 4,
-    "midi_count": 4,
-    "file_count": 11,
-    "bytes": 51426332
+    "midi_count": 5,
+    "file_count": 13,
+    "bytes": 52095341
   },
   {
     "id": 50,
@@ -303,9 +303,9 @@
     "archive_part": 1,
     "master_file": "50_master.mp3",
     "stem_count": 4,
-    "midi_count": 4,
-    "file_count": 11,
-    "bytes": 22412695
+    "midi_count": 5,
+    "file_count": 13,
+    "bytes": 22661144
   },
   {
     "id": 51,
@@ -314,9 +314,9 @@
     "archive_part": 1,
     "master_file": "51_master.mp3",
     "stem_count": 4,
-    "midi_count": 4,
-    "file_count": 11,
-    "bytes": 20017491
+    "midi_count": 5,
+    "file_count": 13,
+    "bytes": 20275480
   },
   {
     "id": 52,
@@ -325,9 +325,9 @@
     "archive_part": 1,
     "master_file": "52_master.mp3",
     "stem_count": 4,
-    "midi_count": 6,
-    "file_count": 13,
-    "bytes": 30555982
+    "midi_count": 7,
+    "file_count": 15,
+    "bytes": 30963840
   },
   {
     "id": 53,
@@ -336,9 +336,9 @@
     "archive_part": 1,
     "master_file": "53_master.mp3",
     "stem_count": 4,
-    "midi_count": 4,
-    "file_count": 11,
-    "bytes": 13417004
+    "midi_count": 5,
+    "file_count": 13,
+    "bytes": 13597752
   },
   {
     "id": 54,
@@ -347,9 +347,9 @@
     "archive_part": 1,
     "master_file": "54_master.mp3",
     "stem_count": 4,
-    "midi_count": 4,
-    "file_count": 11,
-    "bytes": 15816456
+    "midi_count": 5,
+    "file_count": 13,
+    "bytes": 16060263
   },
   {
     "id": 55,
@@ -358,9 +358,9 @@
     "archive_part": 1,
     "master_file": "55_master.mp3",
     "stem_count": 4,
-    "midi_count": 4,
-    "file_count": 11,
-    "bytes": 20212087
+    "midi_count": 5,
+    "file_count": 13,
+    "bytes": 20382778
   },
   {
     "id": 56,
@@ -369,9 +369,9 @@
     "archive_part": 1,
     "master_file": "56_master.mp3",
     "stem_count": 4,
-    "midi_count": 5,
-    "file_count": 12,
-    "bytes": 12114020
+    "midi_count": 6,
+    "file_count": 14,
+    "bytes": 12371062
   },
   {
     "id": 58,
@@ -380,9 +380,9 @@
     "archive_part": 1,
     "master_file": "58_master.mp3",
     "stem_count": 4,
-    "midi_count": 6,
-    "file_count": 13,
-    "bytes": 44416005
+    "midi_count": 7,
+    "file_count": 15,
+    "bytes": 44767271
   },
   {
     "id": 59,
@@ -391,9 +391,9 @@
     "archive_part": 1,
     "master_file": "59_master.mp3",
     "stem_count": 4,
-    "midi_count": 4,
-    "file_count": 11,
-    "bytes": 24815208
+    "midi_count": 5,
+    "file_count": 13,
+    "bytes": 25022894
   },
   {
     "id": 60,
@@ -402,9 +402,9 @@
     "archive_part": 1,
     "master_file": "60_master.mp3",
     "stem_count": 4,
-    "midi_count": 4,
-    "file_count": 11,
-    "bytes": 7617663
+    "midi_count": 5,
+    "file_count": 13,
+    "bytes": 7900245
   },
   {
     "id": 61,
@@ -413,9 +413,9 @@
     "archive_part": 1,
     "master_file": "61_master.mp3",
     "stem_count": 4,
-    "midi_count": 5,
-    "file_count": 12,
-    "bytes": 64668499
+    "midi_count": 6,
+    "file_count": 14,
+    "bytes": 65171798
   },
   {
     "id": 62,
@@ -424,9 +424,9 @@
     "archive_part": 1,
     "master_file": "62_master.mp3",
     "stem_count": 4,
-    "midi_count": 4,
-    "file_count": 11,
-    "bytes": 7251718
+    "midi_count": 5,
+    "file_count": 13,
+    "bytes": 7312372
   },
   {
     "id": 63,
@@ -435,9 +435,9 @@
     "archive_part": 1,
     "master_file": "63_master.mp3",
     "stem_count": 4,
-    "midi_count": 4,
-    "file_count": 11,
-    "bytes": 26014000
+    "midi_count": 5,
+    "file_count": 13,
+    "bytes": 26326769
   },
   {
     "id": 64,
@@ -446,9 +446,9 @@
     "archive_part": 1,
     "master_file": "64_master.mp3",
     "stem_count": 4,
-    "midi_count": 4,
-    "file_count": 11,
-    "bytes": 40417333
+    "midi_count": 5,
+    "file_count": 13,
+    "bytes": 40683204
   },
   {
     "id": 65,
@@ -457,9 +457,9 @@
     "archive_part": 1,
     "master_file": "65_master.mp3",
     "stem_count": 4,
-    "midi_count": 4,
-    "file_count": 11,
-    "bytes": 19614690
+    "midi_count": 5,
+    "file_count": 13,
+    "bytes": 19896624
   },
   {
     "id": 66,
@@ -468,9 +468,9 @@
     "archive_part": 1,
     "master_file": "66_master.mp3",
     "stem_count": 4,
-    "midi_count": 4,
-    "file_count": 11,
-    "bytes": 14411916
+    "midi_count": 5,
+    "file_count": 13,
+    "bytes": 14571836
   },
   {
     "id": 67,
@@ -479,9 +479,9 @@
     "archive_part": 1,
     "master_file": "67_master.mp3",
     "stem_count": 4,
-    "midi_count": 4,
-    "file_count": 11,
-    "bytes": 8684116
+    "midi_count": 5,
+    "file_count": 13,
+    "bytes": 8841792
   },
   {
     "id": 68,
@@ -490,9 +490,9 @@
     "archive_part": 1,
     "master_file": "68_master.mp3",
     "stem_count": 4,
-    "midi_count": 4,
-    "file_count": 11,
-    "bytes": 18928542
+    "midi_count": 5,
+    "file_count": 13,
+    "bytes": 19114379
   },
   {
     "id": 70,
@@ -501,9 +501,9 @@
     "archive_part": 1,
     "master_file": "70_master.mp3",
     "stem_count": 4,
-    "midi_count": 4,
-    "file_count": 11,
-    "bytes": 26261958
+    "midi_count": 5,
+    "file_count": 13,
+    "bytes": 26665757
   },
   {
     "id": 72,
@@ -512,9 +512,9 @@
     "archive_part": 1,
     "master_file": "72_master.mp3",
     "stem_count": 4,
-    "midi_count": 4,
-    "file_count": 11,
-    "bytes": 23880918
+    "midi_count": 5,
+    "file_count": 13,
+    "bytes": 24114317
   },
   {
     "id": 76,
@@ -523,9 +523,9 @@
     "archive_part": 1,
     "master_file": "76_master.mp3",
     "stem_count": 4,
-    "midi_count": 4,
-    "file_count": 11,
-    "bytes": 18814699
+    "midi_count": 5,
+    "file_count": 13,
+    "bytes": 19085306
   },
   {
     "id": 77,
@@ -534,9 +534,9 @@
     "archive_part": 1,
     "master_file": "77_master.mp3",
     "stem_count": 4,
-    "midi_count": 4,
-    "file_count": 11,
-    "bytes": 19294712
+    "midi_count": 5,
+    "file_count": 13,
+    "bytes": 19472941
   },
   {
     "id": 79,
@@ -545,9 +545,9 @@
     "archive_part": 1,
     "master_file": "79_master.mp3",
     "stem_count": 4,
-    "midi_count": 4,
-    "file_count": 11,
-    "bytes": 25616262
+    "midi_count": 5,
+    "file_count": 13,
+    "bytes": 25912816
   },
   {
     "id": 80,
@@ -556,9 +556,9 @@
     "archive_part": 1,
     "master_file": "80_master.mp3",
     "stem_count": 4,
-    "midi_count": 4,
-    "file_count": 11,
-    "bytes": 23268675
+    "midi_count": 5,
+    "file_count": 13,
+    "bytes": 23504811
   },
   {
     "id": 82,
@@ -567,9 +567,9 @@
     "archive_part": 1,
     "master_file": "82_master.mp3",
     "stem_count": 4,
-    "midi_count": 4,
-    "file_count": 11,
-    "bytes": 8415007
+    "midi_count": 5,
+    "file_count": 13,
+    "bytes": 8574657
   },
   {
     "id": 83,
@@ -578,64 +578,64 @@
     "archive_part": 1,
     "master_file": "83_master.mp3",
     "stem_count": 4,
-    "midi_count": 4,
-    "file_count": 11,
-    "bytes": 30414859
+    "midi_count": 5,
+    "file_count": 13,
+    "bytes": 30776249
   },
   {
     "id": 84,
     "title": "Hymnus Eucharisticus (Benjamin Rogers)",
     "original_folder": "0764",
-    "archive_part": 2,
+    "archive_part": 1,
     "master_file": "84_master.mp3",
     "stem_count": 4,
-    "midi_count": 4,
-    "file_count": 11,
-    "bytes": 10011633
+    "midi_count": 5,
+    "file_count": 13,
+    "bytes": 10168662
   },
   {
     "id": 87,
     "title": "Weep you no more sad fountains (John Dowland)",
     "original_folder": "0797",
-    "archive_part": 2,
+    "archive_part": 1,
     "master_file": "87_master.mp3",
     "stem_count": 4,
-    "midi_count": 4,
-    "file_count": 11,
-    "bytes": 14817358
+    "midi_count": 5,
+    "file_count": 13,
+    "bytes": 14952119
   },
   {
     "id": 91,
     "title": "Lisa Ln (Gustav Holst)",
     "original_folder": "0817",
-    "archive_part": 2,
+    "archive_part": 1,
     "master_file": "91_master.mp3",
     "stem_count": 4,
-    "midi_count": 4,
-    "file_count": 11,
-    "bytes": 9008441
+    "midi_count": 5,
+    "file_count": 13,
+    "bytes": 9146907
   },
   {
     "id": 93,
     "title": "Cucu, cucu! (Juan del Encina)",
     "original_folder": "0840",
-    "archive_part": 2,
+    "archive_part": 1,
     "master_file": "93_master.mp3",
     "stem_count": 4,
-    "midi_count": 4,
-    "file_count": 11,
-    "bytes": 10811562
+    "midi_count": 5,
+    "file_count": 13,
+    "bytes": 10917374
   },
   {
     "id": 94,
     "title": "Elle craint cela (Clment Janequin)",
     "original_folder": "0844",
-    "archive_part": 2,
+    "archive_part": 1,
     "master_file": "94_master.mp3",
     "stem_count": 4,
-    "midi_count": 4,
-    "file_count": 11,
-    "bytes": 15519424
+    "midi_count": 5,
+    "file_count": 13,
+    "bytes": 15822470
   },
   {
     "id": 96,
@@ -644,9 +644,9 @@
     "archive_part": 2,
     "master_file": "96_master.mp3",
     "stem_count": 4,
-    "midi_count": 4,
-    "file_count": 11,
-    "bytes": 4828295
+    "midi_count": 5,
+    "file_count": 13,
+    "bytes": 4906241
   },
   {
     "id": 99,
@@ -655,9 +655,9 @@
     "archive_part": 2,
     "master_file": "99_master.mp3",
     "stem_count": 4,
-    "midi_count": 4,
-    "file_count": 11,
-    "bytes": 33619435
+    "midi_count": 5,
+    "file_count": 13,
+    "bytes": 34031221
   },
   {
     "id": 102,
@@ -666,9 +666,9 @@
     "archive_part": 2,
     "master_file": "102_master.mp3",
     "stem_count": 4,
-    "midi_count": 4,
-    "file_count": 11,
-    "bytes": 21215035
+    "midi_count": 5,
+    "file_count": 13,
+    "bytes": 21447913
   },
   {
     "id": 104,
@@ -677,9 +677,9 @@
     "archive_part": 2,
     "master_file": "104_master.mp3",
     "stem_count": 4,
-    "midi_count": 6,
-    "file_count": 13,
-    "bytes": 37624374
+    "midi_count": 7,
+    "file_count": 15,
+    "bytes": 38195389
   },
   {
     "id": 108,
@@ -688,9 +688,9 @@
     "archive_part": 2,
     "master_file": "108_master.mp3",
     "stem_count": 4,
-    "midi_count": 4,
-    "file_count": 11,
-    "bytes": 25368055
+    "midi_count": 5,
+    "file_count": 13,
+    "bytes": 25582566
   },
   {
     "id": 111,
@@ -699,9 +699,9 @@
     "archive_part": 2,
     "master_file": "111_master.mp3",
     "stem_count": 4,
-    "midi_count": 4,
-    "file_count": 11,
-    "bytes": 27842755
+    "midi_count": 5,
+    "file_count": 13,
+    "bytes": 28118499
   },
   {
     "id": 112,
@@ -710,9 +710,20 @@
     "archive_part": 2,
     "master_file": "112_master.mp3",
     "stem_count": 4,
-    "midi_count": 4,
-    "file_count": 11,
-    "bytes": 9213444
+    "midi_count": 5,
+    "file_count": 13,
+    "bytes": 9398373
+  },
+  {
+    "id": 114,
+    "title": "Fly not so swift my dear (John Wilbye)",
+    "original_folder": "0940",
+    "archive_part": 2,
+    "master_file": "114_master.mp3",
+    "stem_count": 4,
+    "midi_count": 7,
+    "file_count": 15,
+    "bytes": 37546619
   },
   {
     "id": 118,
@@ -721,9 +732,9 @@
     "archive_part": 2,
     "master_file": "118_master.mp3",
     "stem_count": 4,
-    "midi_count": 4,
-    "file_count": 11,
-    "bytes": 45811599
+    "midi_count": 5,
+    "file_count": 13,
+    "bytes": 46232300
   },
   {
     "id": 119,
@@ -732,9 +743,9 @@
     "archive_part": 2,
     "master_file": "119_master.mp3",
     "stem_count": 4,
-    "midi_count": 4,
-    "file_count": 11,
-    "bytes": 7209934
+    "midi_count": 5,
+    "file_count": 13,
+    "bytes": 7291005
   },
   {
     "id": 122,
@@ -743,9 +754,9 @@
     "archive_part": 2,
     "master_file": "122_master.mp3",
     "stem_count": 4,
-    "midi_count": 4,
-    "file_count": 11,
-    "bytes": 17559903
+    "midi_count": 5,
+    "file_count": 13,
+    "bytes": 17744336
   },
   {
     "id": 125,
@@ -754,9 +765,9 @@
     "archive_part": 2,
     "master_file": "125_master.mp3",
     "stem_count": 4,
-    "midi_count": 6,
-    "file_count": 13,
-    "bytes": 16168271
+    "midi_count": 7,
+    "file_count": 15,
+    "bytes": 16512089
   },
   {
     "id": 126,
@@ -765,9 +776,9 @@
     "archive_part": 2,
     "master_file": "126_master.mp3",
     "stem_count": 4,
-    "midi_count": 4,
-    "file_count": 11,
-    "bytes": 10491027
+    "midi_count": 5,
+    "file_count": 13,
+    "bytes": 10575076
   },
   {
     "id": 127,
@@ -776,9 +787,9 @@
     "archive_part": 2,
     "master_file": "127_master.mp3",
     "stem_count": 4,
-    "midi_count": 4,
-    "file_count": 11,
-    "bytes": 34316736
+    "midi_count": 5,
+    "file_count": 13,
+    "bytes": 34554731
   },
   {
     "id": 128,
@@ -787,9 +798,9 @@
     "archive_part": 2,
     "master_file": "128_master.mp3",
     "stem_count": 4,
-    "midi_count": 4,
-    "file_count": 11,
-    "bytes": 8412250
+    "midi_count": 5,
+    "file_count": 13,
+    "bytes": 8489285
   },
   {
     "id": 130,
@@ -798,9 +809,9 @@
     "archive_part": 2,
     "master_file": "130_master.mp3",
     "stem_count": 4,
-    "midi_count": 4,
-    "file_count": 11,
-    "bytes": 12014151
+    "midi_count": 5,
+    "file_count": 13,
+    "bytes": 12207567
   },
   {
     "id": 135,
@@ -809,9 +820,9 @@
     "archive_part": 2,
     "master_file": "135_master.mp3",
     "stem_count": 4,
-    "midi_count": 6,
-    "file_count": 13,
-    "bytes": 79050287
+    "midi_count": 7,
+    "file_count": 15,
+    "bytes": 80610256
   },
   {
     "id": 136,
@@ -820,9 +831,9 @@
     "archive_part": 2,
     "master_file": "136_master.mp3",
     "stem_count": 3,
-    "midi_count": 4,
-    "file_count": 10,
-    "bytes": 44580502
+    "midi_count": 5,
+    "file_count": 12,
+    "bytes": 45003400
   },
   {
     "id": 138,
@@ -831,9 +842,9 @@
     "archive_part": 2,
     "master_file": "138_master.mp3",
     "stem_count": 4,
-    "midi_count": 4,
-    "file_count": 11,
-    "bytes": 27215653
+    "midi_count": 5,
+    "file_count": 13,
+    "bytes": 27497158
   },
   {
     "id": 140,
@@ -842,9 +853,9 @@
     "archive_part": 2,
     "master_file": "140_master.mp3",
     "stem_count": 4,
-    "midi_count": 4,
-    "file_count": 11,
-    "bytes": 6914723
+    "midi_count": 5,
+    "file_count": 13,
+    "bytes": 7089099
   },
   {
     "id": 141,
@@ -853,9 +864,9 @@
     "archive_part": 2,
     "master_file": "141_master.mp3",
     "stem_count": 5,
-    "midi_count": 6,
-    "file_count": 14,
-    "bytes": 20304215
+    "midi_count": 7,
+    "file_count": 16,
+    "bytes": 20677939
   },
   {
     "id": 142,
@@ -864,9 +875,9 @@
     "archive_part": 2,
     "master_file": "142_master.mp3",
     "stem_count": 5,
-    "midi_count": 6,
-    "file_count": 14,
-    "bytes": 60267096
+    "midi_count": 7,
+    "file_count": 16,
+    "bytes": 60732978
   },
   {
     "id": 143,
@@ -875,9 +886,9 @@
     "archive_part": 2,
     "master_file": "143_master.mp3",
     "stem_count": 4,
-    "midi_count": 4,
-    "file_count": 11,
-    "bytes": 20985944
+    "midi_count": 5,
+    "file_count": 13,
+    "bytes": 21184884
   },
   {
     "id": 145,
@@ -886,9 +897,9 @@
     "archive_part": 2,
     "master_file": "145_master.mp3",
     "stem_count": 4,
-    "midi_count": 4,
-    "file_count": 11,
-    "bytes": 10407616
+    "midi_count": 5,
+    "file_count": 13,
+    "bytes": 10501118
   },
   {
     "id": 146,
@@ -897,9 +908,9 @@
     "archive_part": 2,
     "master_file": "146_master.mp3",
     "stem_count": 4,
-    "midi_count": 4,
-    "file_count": 11,
-    "bytes": 8809719
+    "midi_count": 5,
+    "file_count": 13,
+    "bytes": 8939571
   },
   {
     "id": 149,
@@ -908,9 +919,9 @@
     "archive_part": 2,
     "master_file": "149_master.mp3",
     "stem_count": 4,
-    "midi_count": 4,
-    "file_count": 11,
-    "bytes": 4565812
+    "midi_count": 5,
+    "file_count": 13,
+    "bytes": 4745538
   },
   {
     "id": 150,
@@ -919,9 +930,9 @@
     "archive_part": 2,
     "master_file": "150_master.mp3",
     "stem_count": 4,
-    "midi_count": 4,
-    "file_count": 11,
-    "bytes": 30413170
+    "midi_count": 5,
+    "file_count": 13,
+    "bytes": 30710761
   },
   {
     "id": 151,
@@ -930,9 +941,9 @@
     "archive_part": 2,
     "master_file": "151_master.mp3",
     "stem_count": 4,
-    "midi_count": 4,
-    "file_count": 11,
-    "bytes": 40184617
+    "midi_count": 5,
+    "file_count": 13,
+    "bytes": 40543692
   },
   {
     "id": 159,
@@ -941,9 +952,9 @@
     "archive_part": 2,
     "master_file": "159_master.mp3",
     "stem_count": 4,
-    "midi_count": 4,
-    "file_count": 11,
-    "bytes": 22134119
+    "midi_count": 5,
+    "file_count": 13,
+    "bytes": 22300485
   },
   {
     "id": 161,
@@ -952,9 +963,9 @@
     "archive_part": 2,
     "master_file": "161_master.mp3",
     "stem_count": 4,
-    "midi_count": 4,
-    "file_count": 11,
-    "bytes": 9023234
+    "midi_count": 5,
+    "file_count": 13,
+    "bytes": 9102055
   },
   {
     "id": 162,
@@ -963,9 +974,9 @@
     "archive_part": 2,
     "master_file": "162_master.mp3",
     "stem_count": 4,
-    "midi_count": 4,
-    "file_count": 11,
-    "bytes": 14980235
+    "midi_count": 5,
+    "file_count": 13,
+    "bytes": 15084302
   },
   {
     "id": 164,
@@ -974,9 +985,9 @@
     "archive_part": 2,
     "master_file": "164_master.mp3",
     "stem_count": 4,
-    "midi_count": 4,
-    "file_count": 11,
-    "bytes": 19317043
+    "midi_count": 5,
+    "file_count": 13,
+    "bytes": 19442875
   },
   {
     "id": 165,
@@ -985,9 +996,9 @@
     "archive_part": 2,
     "master_file": "165_master.mp3",
     "stem_count": 4,
-    "midi_count": 4,
-    "file_count": 11,
-    "bytes": 37511949
+    "midi_count": 5,
+    "file_count": 13,
+    "bytes": 37795026
   },
   {
     "id": 166,
@@ -996,9 +1007,9 @@
     "archive_part": 2,
     "master_file": "166_master.mp3",
     "stem_count": 4,
-    "midi_count": 4,
-    "file_count": 11,
-    "bytes": 43084922
+    "midi_count": 5,
+    "file_count": 13,
+    "bytes": 43453327
   },
   {
     "id": 167,
@@ -1007,9 +1018,9 @@
     "archive_part": 2,
     "master_file": "167_master.mp3",
     "stem_count": 4,
-    "midi_count": 4,
-    "file_count": 11,
-    "bytes": 16811570
+    "midi_count": 5,
+    "file_count": 13,
+    "bytes": 17041499
   },
   {
     "id": 168,
@@ -1018,20 +1029,9 @@
     "archive_part": 2,
     "master_file": "168_master.mp3",
     "stem_count": 4,
-    "midi_count": 4,
-    "file_count": 11,
-    "bytes": 18804492
-  },
-  {
-    "id": 169,
-    "title": "Angelus ad pastores ait a 4 (Hans Leo Hassler)",
-    "original_folder": "4425",
-    "archive_part": 2,
-    "master_file": "169_master.mp3",
-    "stem_count": 4,
-    "midi_count": 4,
-    "file_count": 11,
-    "bytes": 27264584
+    "midi_count": 5,
+    "file_count": 13,
+    "bytes": 19007779
   },
   {
     "id": 170,
@@ -1040,9 +1040,9 @@
     "archive_part": 2,
     "master_file": "170_master.mp3",
     "stem_count": 4,
-    "midi_count": 4,
-    "file_count": 11,
-    "bytes": 7606676
+    "midi_count": 5,
+    "file_count": 13,
+    "bytes": 7681059
   },
   {
     "id": 171,
@@ -1051,9 +1051,9 @@
     "archive_part": 2,
     "master_file": "171_master.mp3",
     "stem_count": 4,
-    "midi_count": 4,
-    "file_count": 11,
-    "bytes": 14011085
+    "midi_count": 5,
+    "file_count": 13,
+    "bytes": 14211741
   },
   {
     "id": 172,
@@ -1062,9 +1062,9 @@
     "archive_part": 2,
     "master_file": "172_master.mp3",
     "stem_count": 4,
-    "midi_count": 4,
-    "file_count": 11,
-    "bytes": 6704355
+    "midi_count": 5,
+    "file_count": 13,
+    "bytes": 6825655
   },
   {
     "id": 174,
@@ -1073,9 +1073,9 @@
     "archive_part": 2,
     "master_file": "174_master.mp3",
     "stem_count": 4,
-    "midi_count": 4,
-    "file_count": 11,
-    "bytes": 14081880
+    "midi_count": 5,
+    "file_count": 13,
+    "bytes": 14267695
   },
   {
     "id": 175,
@@ -1084,9 +1084,9 @@
     "archive_part": 2,
     "master_file": "175_master.mp3",
     "stem_count": 4,
-    "midi_count": 4,
-    "file_count": 11,
-    "bytes": 16411840
+    "midi_count": 5,
+    "file_count": 13,
+    "bytes": 16531397
   },
   {
     "id": 176,
@@ -1095,9 +1095,9 @@
     "archive_part": 2,
     "master_file": "176_master.mp3",
     "stem_count": 4,
-    "midi_count": 4,
-    "file_count": 11,
-    "bytes": 14010265
+    "midi_count": 5,
+    "file_count": 13,
+    "bytes": 14189813
   },
   {
     "id": 177,
@@ -1106,9 +1106,9 @@
     "archive_part": 2,
     "master_file": "177_master.mp3",
     "stem_count": 4,
-    "midi_count": 4,
-    "file_count": 11,
-    "bytes": 36123999
+    "midi_count": 5,
+    "file_count": 13,
+    "bytes": 36365560
   },
   {
     "id": 182,
@@ -1117,20 +1117,9 @@
     "archive_part": 2,
     "master_file": "182_master.mp3",
     "stem_count": 4,
-    "midi_count": 4,
-    "file_count": 11,
-    "bytes": 11318732
-  },
-  {
-    "id": 183,
-    "title": "Beati eritis (Giovanni Croce)",
-    "original_folder": "3866",
-    "archive_part": 2,
-    "master_file": "183_master.mp3",
-    "stem_count": 4,
-    "midi_count": 4,
-    "file_count": 11,
-    "bytes": 18418306
+    "midi_count": 5,
+    "file_count": 13,
+    "bytes": 11475867
   },
   {
     "id": 184,
@@ -1139,9 +1128,9 @@
     "archive_part": 2,
     "master_file": "184_master.mp3",
     "stem_count": 4,
-    "midi_count": 4,
-    "file_count": 11,
-    "bytes": 9213004
+    "midi_count": 5,
+    "file_count": 13,
+    "bytes": 9310167
   },
   {
     "id": 186,
@@ -1150,9 +1139,9 @@
     "archive_part": 2,
     "master_file": "186_master.mp3",
     "stem_count": 4,
-    "midi_count": 4,
-    "file_count": 11,
-    "bytes": 50248016
+    "midi_count": 5,
+    "file_count": 13,
+    "bytes": 50777641
   },
   {
     "id": 187,
@@ -1161,64 +1150,53 @@
     "archive_part": 2,
     "master_file": "187_master.mp3",
     "stem_count": 4,
-    "midi_count": 4,
-    "file_count": 11,
-    "bytes": 75726384
-  },
-  {
-    "id": 190,
-    "title": "Cantate Domino (Giuseppe Pitoni)",
-    "original_folder": "3322",
-    "archive_part": 3,
-    "master_file": "190_master.mp3",
-    "stem_count": 4,
-    "midi_count": 4,
-    "file_count": 11,
-    "bytes": 12329000
+    "midi_count": 5,
+    "file_count": 13,
+    "bytes": 76279529
   },
   {
     "id": 191,
     "title": "Celle qui ma tant (Claudin de Sermisy)",
     "original_folder": "3487",
-    "archive_part": 3,
+    "archive_part": 2,
     "master_file": "191_master.mp3",
     "stem_count": 4,
-    "midi_count": 4,
-    "file_count": 11,
-    "bytes": 16211516
+    "midi_count": 5,
+    "file_count": 13,
+    "bytes": 16437825
   },
   {
     "id": 192,
     "title": "Changing Seasons (Ananias Davisson)",
     "original_folder": "3641",
-    "archive_part": 3,
+    "archive_part": 2,
     "master_file": "192_master.mp3",
     "stem_count": 4,
-    "midi_count": 4,
-    "file_count": 11,
-    "bytes": 6291032
+    "midi_count": 5,
+    "file_count": 13,
+    "bytes": 6385820
   },
   {
     "id": 193,
     "title": "Christus factus est (Giuseppe Pitoni)",
     "original_folder": "3312",
-    "archive_part": 3,
+    "archive_part": 2,
     "master_file": "193_master.mp3",
     "stem_count": 4,
-    "midi_count": 4,
-    "file_count": 11,
-    "bytes": 32772476
+    "midi_count": 5,
+    "file_count": 13,
+    "bytes": 33037196
   },
   {
     "id": 194,
     "title": "Christus factus est (Johann Ernst Eberlin)",
     "original_folder": "3215",
-    "archive_part": 3,
+    "archive_part": 2,
     "master_file": "194_master.mp3",
     "stem_count": 4,
-    "midi_count": 4,
-    "file_count": 11,
-    "bytes": 20551076
+    "midi_count": 5,
+    "file_count": 13,
+    "bytes": 20730358
   },
   {
     "id": 195,
@@ -1227,9 +1205,9 @@
     "archive_part": 3,
     "master_file": "195_master.mp3",
     "stem_count": 4,
-    "midi_count": 4,
-    "file_count": 11,
-    "bytes": 40023210
+    "midi_count": 5,
+    "file_count": 13,
+    "bytes": 40360527
   },
   {
     "id": 196,
@@ -1238,9 +1216,9 @@
     "archive_part": 3,
     "master_file": "196_master.mp3",
     "stem_count": 4,
-    "midi_count": 4,
-    "file_count": 11,
-    "bytes": 55636368
+    "midi_count": 5,
+    "file_count": 13,
+    "bytes": 55891234
   },
   {
     "id": 197,
@@ -1249,9 +1227,9 @@
     "archive_part": 3,
     "master_file": "197_master.mp3",
     "stem_count": 4,
-    "midi_count": 4,
-    "file_count": 11,
-    "bytes": 11076696
+    "midi_count": 5,
+    "file_count": 13,
+    "bytes": 11154247
   },
   {
     "id": 198,
@@ -1260,9 +1238,9 @@
     "archive_part": 3,
     "master_file": "198_master.mp3",
     "stem_count": 4,
-    "midi_count": 4,
-    "file_count": 11,
-    "bytes": 13009563
+    "midi_count": 5,
+    "file_count": 13,
+    "bytes": 13101135
   },
   {
     "id": 199,
@@ -1271,9 +1249,9 @@
     "archive_part": 3,
     "master_file": "199_master.mp3",
     "stem_count": 4,
-    "midi_count": 4,
-    "file_count": 11,
-    "bytes": 28469118
+    "midi_count": 5,
+    "file_count": 13,
+    "bytes": 28671076
   },
   {
     "id": 200,
@@ -1282,9 +1260,9 @@
     "archive_part": 3,
     "master_file": "200_master.mp3",
     "stem_count": 4,
-    "midi_count": 4,
-    "file_count": 11,
-    "bytes": 12426535
+    "midi_count": 5,
+    "file_count": 13,
+    "bytes": 12550772
   },
   {
     "id": 201,
@@ -1293,9 +1271,9 @@
     "archive_part": 3,
     "master_file": "201_master.mp3",
     "stem_count": 4,
-    "midi_count": 4,
-    "file_count": 11,
-    "bytes": 13416902
+    "midi_count": 5,
+    "file_count": 13,
+    "bytes": 13627618
   },
   {
     "id": 202,
@@ -1304,9 +1282,9 @@
     "archive_part": 3,
     "master_file": "202_master.mp3",
     "stem_count": 4,
-    "midi_count": 4,
-    "file_count": 11,
-    "bytes": 10433978
+    "midi_count": 5,
+    "file_count": 13,
+    "bytes": 10505621
   },
   {
     "id": 203,
@@ -1315,9 +1293,9 @@
     "archive_part": 3,
     "master_file": "203_master.mp3",
     "stem_count": 4,
-    "midi_count": 4,
-    "file_count": 11,
-    "bytes": 16998412
+    "midi_count": 5,
+    "file_count": 13,
+    "bytes": 17151405
   },
   {
     "id": 204,
@@ -1326,9 +1304,9 @@
     "archive_part": 3,
     "master_file": "204_master.mp3",
     "stem_count": 4,
-    "midi_count": 4,
-    "file_count": 11,
-    "bytes": 9410334
+    "midi_count": 5,
+    "file_count": 13,
+    "bytes": 9525411
   },
   {
     "id": 205,
@@ -1337,9 +1315,9 @@
     "archive_part": 3,
     "master_file": "205_master.mp3",
     "stem_count": 4,
-    "midi_count": 4,
-    "file_count": 11,
-    "bytes": 26045495
+    "midi_count": 5,
+    "file_count": 13,
+    "bytes": 26245667
   },
   {
     "id": 207,
@@ -1348,9 +1326,9 @@
     "archive_part": 3,
     "master_file": "207_master.mp3",
     "stem_count": 4,
-    "midi_count": 4,
-    "file_count": 11,
-    "bytes": 22134868
+    "midi_count": 5,
+    "file_count": 13,
+    "bytes": 22302253
   },
   {
     "id": 208,
@@ -1359,9 +1337,9 @@
     "archive_part": 3,
     "master_file": "208_master.mp3",
     "stem_count": 4,
-    "midi_count": 4,
-    "file_count": 11,
-    "bytes": 10813066
+    "midi_count": 5,
+    "file_count": 13,
+    "bytes": 10979806
   },
   {
     "id": 209,
@@ -1370,9 +1348,9 @@
     "archive_part": 3,
     "master_file": "209_master.mp3",
     "stem_count": 4,
-    "midi_count": 4,
-    "file_count": 11,
-    "bytes": 14009876
+    "midi_count": 5,
+    "file_count": 13,
+    "bytes": 14199088
   },
   {
     "id": 210,
@@ -1381,9 +1359,9 @@
     "archive_part": 3,
     "master_file": "210_master.mp3",
     "stem_count": 4,
-    "midi_count": 4,
-    "file_count": 11,
-    "bytes": 26545052
+    "midi_count": 5,
+    "file_count": 13,
+    "bytes": 26714669
   },
   {
     "id": 212,
@@ -1392,9 +1370,9 @@
     "archive_part": 3,
     "master_file": "212_master.mp3",
     "stem_count": 4,
-    "midi_count": 4,
-    "file_count": 11,
-    "bytes": 29185518
+    "midi_count": 5,
+    "file_count": 13,
+    "bytes": 29424374
   },
   {
     "id": 214,
@@ -1403,9 +1381,9 @@
     "archive_part": 3,
     "master_file": "214_master.mp3",
     "stem_count": 4,
-    "midi_count": 4,
-    "file_count": 11,
-    "bytes": 32628125
+    "midi_count": 5,
+    "file_count": 13,
+    "bytes": 32846938
   },
   {
     "id": 215,
@@ -1414,9 +1392,9 @@
     "archive_part": 3,
     "master_file": "215_master.mp3",
     "stem_count": 4,
-    "midi_count": 4,
-    "file_count": 11,
-    "bytes": 82441716
+    "midi_count": 5,
+    "file_count": 13,
+    "bytes": 83453874
   },
   {
     "id": 216,
@@ -1425,9 +1403,9 @@
     "archive_part": 3,
     "master_file": "216_master.mp3",
     "stem_count": 4,
-    "midi_count": 4,
-    "file_count": 11,
-    "bytes": 28307659
+    "midi_count": 5,
+    "file_count": 13,
+    "bytes": 28525381
   },
   {
     "id": 217,
@@ -1436,9 +1414,9 @@
     "archive_part": 3,
     "master_file": "217_master.mp3",
     "stem_count": 4,
-    "midi_count": 4,
-    "file_count": 11,
-    "bytes": 14414037
+    "midi_count": 5,
+    "file_count": 13,
+    "bytes": 14586893
   },
   {
     "id": 218,
@@ -1447,9 +1425,9 @@
     "archive_part": 3,
     "master_file": "218_master.mp3",
     "stem_count": 4,
-    "midi_count": 4,
-    "file_count": 11,
-    "bytes": 36500009
+    "midi_count": 5,
+    "file_count": 13,
+    "bytes": 36734562
   },
   {
     "id": 219,
@@ -1458,9 +1436,9 @@
     "archive_part": 3,
     "master_file": "219_master.mp3",
     "stem_count": 4,
-    "midi_count": 4,
-    "file_count": 11,
-    "bytes": 10790520
+    "midi_count": 5,
+    "file_count": 13,
+    "bytes": 10902574
   },
   {
     "id": 221,
@@ -1469,9 +1447,9 @@
     "archive_part": 3,
     "master_file": "221_master.mp3",
     "stem_count": 4,
-    "midi_count": 4,
-    "file_count": 11,
-    "bytes": 11612440
+    "midi_count": 5,
+    "file_count": 13,
+    "bytes": 11736802
   },
   {
     "id": 222,
@@ -1480,9 +1458,9 @@
     "archive_part": 3,
     "master_file": "222_master.mp3",
     "stem_count": 4,
-    "midi_count": 4,
-    "file_count": 11,
-    "bytes": 21534518
+    "midi_count": 5,
+    "file_count": 13,
+    "bytes": 21761627
   },
   {
     "id": 223,
@@ -1491,9 +1469,9 @@
     "archive_part": 3,
     "master_file": "223_master.mp3",
     "stem_count": 4,
-    "midi_count": 4,
-    "file_count": 11,
-    "bytes": 39585323
+    "midi_count": 5,
+    "file_count": 13,
+    "bytes": 39895085
   },
   {
     "id": 224,
@@ -1502,9 +1480,9 @@
     "archive_part": 3,
     "master_file": "224_master.mp3",
     "stem_count": 4,
-    "midi_count": 4,
-    "file_count": 11,
-    "bytes": 28427794
+    "midi_count": 5,
+    "file_count": 13,
+    "bytes": 28649974
   },
   {
     "id": 225,
@@ -1513,9 +1491,9 @@
     "archive_part": 3,
     "master_file": "225_master.mp3",
     "stem_count": 4,
-    "midi_count": 4,
-    "file_count": 11,
-    "bytes": 17181942
+    "midi_count": 5,
+    "file_count": 13,
+    "bytes": 17331962
   },
   {
     "id": 226,
@@ -1524,9 +1502,9 @@
     "archive_part": 3,
     "master_file": "226_master.mp3",
     "stem_count": 4,
-    "midi_count": 4,
-    "file_count": 11,
-    "bytes": 18479117
+    "midi_count": 5,
+    "file_count": 13,
+    "bytes": 18945154
   },
   {
     "id": 228,
@@ -1535,9 +1513,9 @@
     "archive_part": 3,
     "master_file": "228_master.mp3",
     "stem_count": 4,
-    "midi_count": 4,
-    "file_count": 11,
-    "bytes": 31415259
+    "midi_count": 5,
+    "file_count": 13,
+    "bytes": 31693620
   },
   {
     "id": 229,
@@ -1546,9 +1524,9 @@
     "archive_part": 3,
     "master_file": "229_master.mp3",
     "stem_count": 4,
-    "midi_count": 4,
-    "file_count": 11,
-    "bytes": 17044876
+    "midi_count": 5,
+    "file_count": 13,
+    "bytes": 17172953
   },
   {
     "id": 230,
@@ -1557,9 +1535,9 @@
     "archive_part": 3,
     "master_file": "230_master.mp3",
     "stem_count": 4,
-    "midi_count": 4,
-    "file_count": 11,
-    "bytes": 28746536
+    "midi_count": 5,
+    "file_count": 13,
+    "bytes": 28970786
   },
   {
     "id": 231,
@@ -1568,9 +1546,9 @@
     "archive_part": 3,
     "master_file": "231_master.mp3",
     "stem_count": 4,
-    "midi_count": 4,
-    "file_count": 11,
-    "bytes": 16610387
+    "midi_count": 5,
+    "file_count": 13,
+    "bytes": 16723590
   },
   {
     "id": 232,
@@ -1579,9 +1557,9 @@
     "archive_part": 3,
     "master_file": "232_master.mp3",
     "stem_count": 4,
-    "midi_count": 4,
-    "file_count": 11,
-    "bytes": 13211165
+    "midi_count": 5,
+    "file_count": 13,
+    "bytes": 13320116
   },
   {
     "id": 233,
@@ -1590,9 +1568,9 @@
     "archive_part": 3,
     "master_file": "233_master.mp3",
     "stem_count": 4,
-    "midi_count": 4,
-    "file_count": 11,
-    "bytes": 14040061
+    "midi_count": 5,
+    "file_count": 13,
+    "bytes": 14157597
   },
   {
     "id": 234,
@@ -1601,9 +1579,9 @@
     "archive_part": 3,
     "master_file": "234_master.mp3",
     "stem_count": 4,
-    "midi_count": 4,
-    "file_count": 11,
-    "bytes": 18730677
+    "midi_count": 5,
+    "file_count": 13,
+    "bytes": 18923399
   },
   {
     "id": 235,
@@ -1612,9 +1590,9 @@
     "archive_part": 3,
     "master_file": "235_master.mp3",
     "stem_count": 4,
-    "midi_count": 4,
-    "file_count": 11,
-    "bytes": 15617170
+    "midi_count": 5,
+    "file_count": 13,
+    "bytes": 15838379
   },
   {
     "id": 236,
@@ -1623,9 +1601,9 @@
     "archive_part": 3,
     "master_file": "236_master.mp3",
     "stem_count": 4,
-    "midi_count": 4,
-    "file_count": 11,
-    "bytes": 18137024
+    "midi_count": 5,
+    "file_count": 13,
+    "bytes": 18293943
   },
   {
     "id": 237,
@@ -1634,9 +1612,9 @@
     "archive_part": 3,
     "master_file": "237_master.mp3",
     "stem_count": 4,
-    "midi_count": 4,
-    "file_count": 11,
-    "bytes": 18651533
+    "midi_count": 5,
+    "file_count": 13,
+    "bytes": 18862932
   },
   {
     "id": 238,
@@ -1645,9 +1623,9 @@
     "archive_part": 3,
     "master_file": "238_master.mp3",
     "stem_count": 4,
-    "midi_count": 4,
-    "file_count": 11,
-    "bytes": 17695243
+    "midi_count": 5,
+    "file_count": 13,
+    "bytes": 17922553
   },
   {
     "id": 239,
@@ -1656,9 +1634,9 @@
     "archive_part": 3,
     "master_file": "239_master.mp3",
     "stem_count": 4,
-    "midi_count": 4,
-    "file_count": 11,
-    "bytes": 17460984
+    "midi_count": 5,
+    "file_count": 13,
+    "bytes": 17874271
   },
   {
     "id": 240,
@@ -1667,9 +1645,9 @@
     "archive_part": 3,
     "master_file": "240_master.mp3",
     "stem_count": 4,
-    "midi_count": 4,
-    "file_count": 11,
-    "bytes": 15015629
+    "midi_count": 5,
+    "file_count": 13,
+    "bytes": 15244622
   },
   {
     "id": 241,
@@ -1678,9 +1656,9 @@
     "archive_part": 3,
     "master_file": "241_master.mp3",
     "stem_count": 4,
-    "midi_count": 4,
-    "file_count": 11,
-    "bytes": 10408018
+    "midi_count": 5,
+    "file_count": 13,
+    "bytes": 10507275
   },
   {
     "id": 242,
@@ -1689,9 +1667,9 @@
     "archive_part": 3,
     "master_file": "242_master.mp3",
     "stem_count": 4,
-    "midi_count": 4,
-    "file_count": 11,
-    "bytes": 54589934
+    "midi_count": 5,
+    "file_count": 13,
+    "bytes": 54988047
   },
   {
     "id": 245,
@@ -1700,9 +1678,9 @@
     "archive_part": 3,
     "master_file": "245_master.mp3",
     "stem_count": 4,
-    "midi_count": 4,
-    "file_count": 11,
-    "bytes": 14413598
+    "midi_count": 5,
+    "file_count": 13,
+    "bytes": 14616677
   },
   {
     "id": 246,
@@ -1711,9 +1689,9 @@
     "archive_part": 3,
     "master_file": "246_master.mp3",
     "stem_count": 4,
-    "midi_count": 4,
-    "file_count": 11,
-    "bytes": 16532258
+    "midi_count": 5,
+    "file_count": 13,
+    "bytes": 16739627
   },
   {
     "id": 247,
@@ -1722,42 +1700,53 @@
     "archive_part": 3,
     "master_file": "247_master.mp3",
     "stem_count": 4,
-    "midi_count": 4,
-    "file_count": 11,
-    "bytes": 12410356
+    "midi_count": 5,
+    "file_count": 13,
+    "bytes": 12596738
   },
   {
     "id": 248,
     "title": "Massachusetts (Amos Pilsbury)",
     "original_folder": "4414",
-    "archive_part": 4,
+    "archive_part": 3,
     "master_file": "248_master.mp3",
     "stem_count": 4,
-    "midi_count": 4,
-    "file_count": 11,
-    "bytes": 16777424
+    "midi_count": 5,
+    "file_count": 13,
+    "bytes": 16959998
+  },
+  {
+    "id": 250,
+    "title": "Memor esto verbi tui (Josquin des Prez)",
+    "original_folder": "4435",
+    "archive_part": 3,
+    "master_file": "250_master.mp3",
+    "stem_count": 4,
+    "midi_count": 5,
+    "file_count": 13,
+    "bytes": 137239526
   },
   {
     "id": 252,
     "title": "Min vn r den bsta (August Sderman)",
     "original_folder": "4345",
-    "archive_part": 4,
+    "archive_part": 3,
     "master_file": "252_master.mp3",
     "stem_count": 4,
-    "midi_count": 4,
-    "file_count": 11,
-    "bytes": 8156654
+    "midi_count": 5,
+    "file_count": 13,
+    "bytes": 8486839
   },
   {
     "id": 253,
     "title": "Miserere mei (Antonio Lotti)",
     "original_folder": "3455",
-    "archive_part": 4,
+    "archive_part": 3,
     "master_file": "253_master.mp3",
     "stem_count": 4,
-    "midi_count": 4,
-    "file_count": 11,
-    "bytes": 117579623
+    "midi_count": 5,
+    "file_count": 13,
+    "bytes": 118551451
   },
   {
     "id": 254,
@@ -1766,9 +1755,9 @@
     "archive_part": 4,
     "master_file": "254_master.mp3",
     "stem_count": 4,
-    "midi_count": 4,
-    "file_count": 11,
-    "bytes": 58428774
+    "midi_count": 5,
+    "file_count": 13,
+    "bytes": 59083752
   },
   {
     "id": 255,
@@ -1777,9 +1766,9 @@
     "archive_part": 4,
     "master_file": "255_master.mp3",
     "stem_count": 4,
-    "midi_count": 4,
-    "file_count": 11,
-    "bytes": 14213277
+    "midi_count": 5,
+    "file_count": 13,
+    "bytes": 14413240
   },
   {
     "id": 256,
@@ -1788,9 +1777,9 @@
     "archive_part": 4,
     "master_file": "256_master.mp3",
     "stem_count": 4,
-    "midi_count": 4,
-    "file_count": 11,
-    "bytes": 22900630
+    "midi_count": 5,
+    "file_count": 13,
+    "bytes": 23018936
   },
   {
     "id": 259,
@@ -1799,9 +1788,9 @@
     "archive_part": 4,
     "master_file": "259_master.mp3",
     "stem_count": 4,
-    "midi_count": 4,
-    "file_count": 11,
-    "bytes": 58244392
+    "midi_count": 5,
+    "file_count": 13,
+    "bytes": 58563716
   },
   {
     "id": 260,
@@ -1810,9 +1799,9 @@
     "archive_part": 4,
     "master_file": "260_master.mp3",
     "stem_count": 4,
-    "midi_count": 4,
-    "file_count": 11,
-    "bytes": 10814712
+    "midi_count": 5,
+    "file_count": 13,
+    "bytes": 10940973
   },
   {
     "id": 261,
@@ -1821,9 +1810,9 @@
     "archive_part": 4,
     "master_file": "261_master.mp3",
     "stem_count": 4,
-    "midi_count": 4,
-    "file_count": 11,
-    "bytes": 38816096
+    "midi_count": 5,
+    "file_count": 13,
+    "bytes": 39170199
   },
   {
     "id": 262,
@@ -1832,9 +1821,9 @@
     "archive_part": 4,
     "master_file": "262_master.mp3",
     "stem_count": 4,
-    "midi_count": 4,
-    "file_count": 11,
-    "bytes": 19722128
+    "midi_count": 5,
+    "file_count": 13,
+    "bytes": 19886971
   },
   {
     "id": 264,
@@ -1843,9 +1832,9 @@
     "archive_part": 4,
     "master_file": "264_master.mp3",
     "stem_count": 4,
-    "midi_count": 4,
-    "file_count": 11,
-    "bytes": 14661597
+    "midi_count": 5,
+    "file_count": 13,
+    "bytes": 14822461
   },
   {
     "id": 266,
@@ -1854,9 +1843,9 @@
     "archive_part": 4,
     "master_file": "266_master.mp3",
     "stem_count": 4,
-    "midi_count": 4,
-    "file_count": 11,
-    "bytes": 7608490
+    "midi_count": 5,
+    "file_count": 13,
+    "bytes": 7733027
   },
   {
     "id": 268,
@@ -1865,9 +1854,9 @@
     "archive_part": 4,
     "master_file": "268_master.mp3",
     "stem_count": 4,
-    "midi_count": 4,
-    "file_count": 11,
-    "bytes": 19611346
+    "midi_count": 5,
+    "file_count": 13,
+    "bytes": 19827554
   },
   {
     "id": 269,
@@ -1876,20 +1865,9 @@
     "archive_part": 4,
     "master_file": "269_master.mp3",
     "stem_count": 4,
-    "midi_count": 4,
-    "file_count": 11,
-    "bytes": 34454395
-  },
-  {
-    "id": 270,
-    "title": "O Saviour of the world (John Goss)",
-    "original_folder": "2958",
-    "archive_part": 4,
-    "master_file": "270_master.mp3",
-    "stem_count": 4,
-    "midi_count": 4,
-    "file_count": 11,
-    "bytes": 29818323
+    "midi_count": 5,
+    "file_count": 13,
+    "bytes": 34842335
   },
   {
     "id": 271,
@@ -1898,9 +1876,9 @@
     "archive_part": 4,
     "master_file": "271_master.mp3",
     "stem_count": 4,
-    "midi_count": 4,
-    "file_count": 11,
-    "bytes": 42140304
+    "midi_count": 5,
+    "file_count": 13,
+    "bytes": 42430063
   },
   {
     "id": 273,
@@ -1909,9 +1887,9 @@
     "archive_part": 4,
     "master_file": "273_master.mp3",
     "stem_count": 4,
-    "midi_count": 4,
-    "file_count": 11,
-    "bytes": 30850489
+    "midi_count": 5,
+    "file_count": 13,
+    "bytes": 31056345
   },
   {
     "id": 274,
@@ -1920,9 +1898,9 @@
     "archive_part": 4,
     "master_file": "274_master.mp3",
     "stem_count": 4,
-    "midi_count": 4,
-    "file_count": 11,
-    "bytes": 19411746
+    "midi_count": 5,
+    "file_count": 13,
+    "bytes": 19601900
   },
   {
     "id": 276,
@@ -1931,9 +1909,9 @@
     "archive_part": 4,
     "master_file": "276_master.mp3",
     "stem_count": 4,
-    "midi_count": 4,
-    "file_count": 11,
-    "bytes": 23314185
+    "midi_count": 5,
+    "file_count": 13,
+    "bytes": 23684774
   },
   {
     "id": 277,
@@ -1942,9 +1920,9 @@
     "archive_part": 4,
     "master_file": "277_master.mp3",
     "stem_count": 4,
-    "midi_count": 4,
-    "file_count": 11,
-    "bytes": 20680657
+    "midi_count": 5,
+    "file_count": 13,
+    "bytes": 20802820
   },
   {
     "id": 278,
@@ -1953,9 +1931,9 @@
     "archive_part": 4,
     "master_file": "278_master.mp3",
     "stem_count": 4,
-    "midi_count": 4,
-    "file_count": 11,
-    "bytes": 22002861
+    "midi_count": 5,
+    "file_count": 13,
+    "bytes": 22211112
   },
   {
     "id": 279,
@@ -1964,9 +1942,9 @@
     "archive_part": 4,
     "master_file": "279_master.mp3",
     "stem_count": 4,
-    "midi_count": 4,
-    "file_count": 11,
-    "bytes": 17017220
+    "midi_count": 5,
+    "file_count": 13,
+    "bytes": 17328080
   },
   {
     "id": 281,
@@ -1975,9 +1953,9 @@
     "archive_part": 4,
     "master_file": "281_master.mp3",
     "stem_count": 4,
-    "midi_count": 4,
-    "file_count": 11,
-    "bytes": 12808983
+    "midi_count": 5,
+    "file_count": 13,
+    "bytes": 12945369
   },
   {
     "id": 282,
@@ -1986,9 +1964,9 @@
     "archive_part": 4,
     "master_file": "282_master.mp3",
     "stem_count": 4,
-    "midi_count": 4,
-    "file_count": 11,
-    "bytes": 21334741
+    "midi_count": 5,
+    "file_count": 13,
+    "bytes": 21465943
   },
   {
     "id": 283,
@@ -1997,9 +1975,9 @@
     "archive_part": 4,
     "master_file": "283_master.mp3",
     "stem_count": 4,
-    "midi_count": 4,
-    "file_count": 11,
-    "bytes": 62939912
+    "midi_count": 5,
+    "file_count": 13,
+    "bytes": 63282101
   },
   {
     "id": 285,
@@ -2008,9 +1986,9 @@
     "archive_part": 4,
     "master_file": "285_master.mp3",
     "stem_count": 4,
-    "midi_count": 4,
-    "file_count": 11,
-    "bytes": 20141652
+    "midi_count": 5,
+    "file_count": 13,
+    "bytes": 20374210
   },
   {
     "id": 286,
@@ -2019,9 +1997,9 @@
     "archive_part": 4,
     "master_file": "286_master.mp3",
     "stem_count": 4,
-    "midi_count": 4,
-    "file_count": 11,
-    "bytes": 58015016
+    "midi_count": 5,
+    "file_count": 13,
+    "bytes": 58406869
   },
   {
     "id": 287,
@@ -2030,9 +2008,9 @@
     "archive_part": 4,
     "master_file": "287_master.mp3",
     "stem_count": 4,
-    "midi_count": 4,
-    "file_count": 11,
-    "bytes": 13406282
+    "midi_count": 5,
+    "file_count": 13,
+    "bytes": 13561717
   },
   {
     "id": 288,
@@ -2041,9 +2019,9 @@
     "archive_part": 4,
     "master_file": "288_master.mp3",
     "stem_count": 4,
-    "midi_count": 4,
-    "file_count": 11,
-    "bytes": 29614002
+    "midi_count": 5,
+    "file_count": 13,
+    "bytes": 29916059
   },
   {
     "id": 289,
@@ -2052,9 +2030,20 @@
     "archive_part": 4,
     "master_file": "289_master.mp3",
     "stem_count": 4,
-    "midi_count": 4,
-    "file_count": 11,
-    "bytes": 30726535
+    "midi_count": 5,
+    "file_count": 13,
+    "bytes": 30977922
+  },
+  {
+    "id": 290,
+    "title": "Salve Regina a 4 (Giovanni Pierluigi da Palestrina)",
+    "original_folder": "3178",
+    "archive_part": 4,
+    "master_file": "290_master.mp3",
+    "stem_count": 4,
+    "midi_count": 5,
+    "file_count": 13,
+    "bytes": 57073513
   },
   {
     "id": 291,
@@ -2063,9 +2052,9 @@
     "archive_part": 4,
     "master_file": "291_master.mp3",
     "stem_count": 4,
-    "midi_count": 4,
-    "file_count": 11,
-    "bytes": 10037609
+    "midi_count": 5,
+    "file_count": 13,
+    "bytes": 10124152
   },
   {
     "id": 292,
@@ -2074,9 +2063,9 @@
     "archive_part": 4,
     "master_file": "292_master.mp3",
     "stem_count": 4,
-    "midi_count": 4,
-    "file_count": 11,
-    "bytes": 11715473
+    "midi_count": 5,
+    "file_count": 13,
+    "bytes": 11827757
   },
   {
     "id": 294,
@@ -2085,9 +2074,9 @@
     "archive_part": 4,
     "master_file": "294_master.mp3",
     "stem_count": 4,
-    "midi_count": 4,
-    "file_count": 11,
-    "bytes": 20012880
+    "midi_count": 5,
+    "file_count": 13,
+    "bytes": 20228273
   },
   {
     "id": 295,
@@ -2096,9 +2085,9 @@
     "archive_part": 4,
     "master_file": "295_master.mp3",
     "stem_count": 4,
-    "midi_count": 4,
-    "file_count": 11,
-    "bytes": 8808554
+    "midi_count": 5,
+    "file_count": 13,
+    "bytes": 8889539
   },
   {
     "id": 296,
@@ -2107,9 +2096,20 @@
     "archive_part": 4,
     "master_file": "296_master.mp3",
     "stem_count": 4,
-    "midi_count": 4,
-    "file_count": 11,
-    "bytes": 58791040
+    "midi_count": 5,
+    "file_count": 13,
+    "bytes": 59455953
+  },
+  {
+    "id": 297,
+    "title": "Te Deum laudamus (Giovanni Francesco Anerio)",
+    "original_folder": "3070",
+    "archive_part": 4,
+    "master_file": "297_master.mp3",
+    "stem_count": 4,
+    "midi_count": 5,
+    "file_count": 13,
+    "bytes": 94863410
   },
   {
     "id": 298,
@@ -2118,9 +2118,9 @@
     "archive_part": 4,
     "master_file": "298_master.mp3",
     "stem_count": 4,
-    "midi_count": 4,
-    "file_count": 11,
-    "bytes": 5250343
+    "midi_count": 5,
+    "file_count": 13,
+    "bytes": 5327637
   },
   {
     "id": 299,
@@ -2129,9 +2129,9 @@
     "archive_part": 4,
     "master_file": "299_master.mp3",
     "stem_count": 4,
-    "midi_count": 4,
-    "file_count": 11,
-    "bytes": 23450669
+    "midi_count": 5,
+    "file_count": 13,
+    "bytes": 23651694
   },
   {
     "id": 300,
@@ -2140,9 +2140,9 @@
     "archive_part": 4,
     "master_file": "300_master.mp3",
     "stem_count": 4,
-    "midi_count": 4,
-    "file_count": 11,
-    "bytes": 25015105
+    "midi_count": 5,
+    "file_count": 13,
+    "bytes": 25310191
   },
   {
     "id": 301,
@@ -2151,9 +2151,9 @@
     "archive_part": 4,
     "master_file": "301_master.mp3",
     "stem_count": 4,
-    "midi_count": 4,
-    "file_count": 11,
-    "bytes": 20754692
+    "midi_count": 5,
+    "file_count": 13,
+    "bytes": 20887084
   },
   {
     "id": 303,
@@ -2162,9 +2162,9 @@
     "archive_part": 4,
     "master_file": "303_master.mp3",
     "stem_count": 4,
-    "midi_count": 4,
-    "file_count": 11,
-    "bytes": 13429420
+    "midi_count": 5,
+    "file_count": 13,
+    "bytes": 13541473
   },
   {
     "id": 304,
@@ -2173,9 +2173,9 @@
     "archive_part": 4,
     "master_file": "304_master.mp3",
     "stem_count": 4,
-    "midi_count": 4,
-    "file_count": 11,
-    "bytes": 14081657
+    "midi_count": 5,
+    "file_count": 13,
+    "bytes": 14459001
   },
   {
     "id": 305,
@@ -2184,9 +2184,9 @@
     "archive_part": 4,
     "master_file": "305_master.mp3",
     "stem_count": 4,
-    "midi_count": 4,
-    "file_count": 11,
-    "bytes": 8405898
+    "midi_count": 5,
+    "file_count": 13,
+    "bytes": 8487210
   },
   {
     "id": 307,
@@ -2195,8 +2195,8 @@
     "archive_part": 4,
     "master_file": "307_master.mp3",
     "stem_count": 4,
-    "midi_count": 4,
-    "file_count": 11,
-    "bytes": 40533537
+    "midi_count": 5,
+    "file_count": 13,
+    "bytes": 40767820
   }
 ]
