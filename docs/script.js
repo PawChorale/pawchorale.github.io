@@ -49,7 +49,7 @@ function renderDownloads(summary) {
 
   if (enabled) {
     status.classList.add("ready");
-    status.innerHTML = '<span aria-hidden="true"></span><p><strong>Version 1.0.0 is available.</strong> Download all four parts for the complete release.</p>';
+    status.innerHTML = '<span aria-hidden="true"></span><p><strong>The complete Zenodo archive is available.</strong> Use the GitHub parts below only as alternative mirrors.</p>';
   } else {
     status.innerHTML = '<span aria-hidden="true"></span><p><strong>Full archives are not public yet.</strong> The catalog and example files remain available while the release assets are prepared.</p>';
   }
