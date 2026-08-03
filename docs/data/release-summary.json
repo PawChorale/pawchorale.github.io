@@ -1,6 +1,6 @@
 {
   "release": "v1.0.0",
-  "downloads_enabled": false,
+  "downloads_enabled": true,
   "rights_status": "provided",
   "song_count": 200,
   "review_excluded_song_ids": [
