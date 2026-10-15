@@ -1,0 +1,84 @@
+.community-page :focus-visible {
+  outline: 3px solid var(--burgundy);
+  outline-offset: 5px;
+}
+
+.community-page .site-header nav [aria-current="page"] { color: var(--burgundy); }
+
+.community-intro,
+.community-response,
+.community-contact {
+  max-width: var(--content);
+  margin: 0 auto;
+}
+
+.community-intro { padding: clamp(3.5rem, 7vw, 6rem) 0 3.5rem; }
+.community-intro h1 { font-size: clamp(3rem, 6vw, 5.2rem); line-height: 1.02; }
+.community-intro h1 span { color: var(--burgundy); }
+.community-lede { max-width: 740px; margin: 1.6rem 0 0; color: var(--muted); font-size: clamp(1.05rem, 1.7vw, 1.2rem); }
+
+.community-options {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.2rem;
+  margin-top: 2.7rem;
+}
+.community-option {
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  padding: 1.7rem 1.8rem;
+  border: 1px solid var(--line);
+  border-top: 3px solid var(--burgundy);
+  border-radius: 0 0 var(--radius) var(--radius);
+  background: var(--surface);
+  text-decoration: none;
+  transition: background-color 150ms ease, border-color 150ms ease;
+}
+.community-option:hover { border-color: var(--burgundy); background: #fffdfb; }
+.option-kicker { color: var(--muted); font-size: 0.76rem; font-weight: 650; }
+.community-option h2 { display: flex; justify-content: space-between; gap: 1rem; margin: 0.65rem 0 0.8rem; font-size: clamp(1.5rem, 2.4vw, 2rem); line-height: 1.15; }
+.community-option h2 span { color: var(--burgundy); font-weight: 400; }
+.community-option p { margin: 0; color: var(--muted); font-size: 0.94rem; }
+.option-note { display: block; margin-top: auto; padding-top: 1.25rem; color: var(--burgundy); font-size: 0.8rem; font-weight: 650; }
+
+.community-response { padding: 3rem 0; border-top: 1px solid var(--line); scroll-margin-top: 90px; }
+.response-heading { display: grid; grid-template-columns: 1fr 0.8fr; align-items: end; gap: 3rem; margin-bottom: 2rem; }
+.response-heading h2 { max-width: 540px; font-size: clamp(2rem, 3.6vw, 3rem); line-height: 1.08; }
+.response-heading > p { margin: 0; color: var(--muted); font-size: 0.95rem; }
+.form-toolbar { display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: 1rem; margin-bottom: 1rem; }
+.form-toolbar > span { color: var(--muted); font-size: 0.8rem; }
+.form-toolbar .button { gap: 0.5rem; }
+.form-container { overflow: hidden; border: 1px solid var(--line); border-radius: var(--radius); background: var(--surface); }
+#community-form { display: block; width: 100%; height: 1510px; border: 0; background: var(--surface); }
+.form-help a { color: var(--burgundy); text-underline-offset: 0.2em; }
+.form-help { margin: 0.85rem 0 0; color: var(--muted); font-size: 0.8rem; }
+
+.community-contact { display: grid; grid-template-columns: 0.65fr 1fr; align-items: center; gap: 3rem; padding: 2.3rem 0 3.5rem; }
+.community-contact h2 { font-size: clamp(1.8rem, 3vw, 2.5rem); }
+.community-contact p:not(.eyebrow) { margin: 0 0 0.5rem; color: var(--muted); font-size: 0.95rem; }
+.contact-email { color: var(--burgundy); font-size: clamp(1rem, 2vw, 1.2rem); font-weight: 700; text-underline-offset: 0.25em; overflow-wrap: anywhere; }
+.community-page footer > div { flex-wrap: wrap; }
+
+@media (max-width: 1208px) {
+  .community-intro, .community-response, .community-contact { margin-right: 24px; margin-left: 24px; }
+}
+
+@media (max-width: 750px) {
+  .community-options { grid-template-columns: 1fr; }
+  .response-heading, .community-contact { grid-template-columns: 1fr; gap: 1.2rem; }
+  .community-option { padding: 1.5rem; }
+  .community-response { padding-top: 2.5rem; }
+  .community-contact { padding-top: 1.5rem; }
+}
+
+@media (max-width: 650px) {
+  .community-intro, .community-response, .community-contact { margin-right: 20px; margin-left: 20px; }
+  .community-intro { padding-top: 3rem; padding-bottom: 2.5rem; }
+  .community-options { margin-top: 2rem; }
+  .community-page .site-header .nav-download { font-size: 0.72rem; padding: 0.65rem 0.7rem; }
+  .community-response { scroll-margin-top: 75px; }
+  .form-toolbar { align-items: flex-start; flex-direction: column; }
+  .form-toolbar .button { width: 100%; }
+  #community-form { height: 1650px; }
+}
